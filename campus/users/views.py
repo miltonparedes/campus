@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("USERS.")
+    return HttpResponse("USERS")
 # Create your views here.
