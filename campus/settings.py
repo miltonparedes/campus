@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'campus.users',
+    'campus.subjects',
     'sass_processor'
 ]
 
@@ -58,8 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            (os.path.join(BASE_DIR, 'campus/templates')),
-            (os.path.join(BASE_DIR, 'campus/users/templates')),
+            os.path.join(BASE_DIR, 'campus/templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
