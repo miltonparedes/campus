@@ -38,9 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'campus.users',
-    'campus.subjects',
-    'sass_processor'
+    'sass_processor',
+
+    'apps.users',
+    'apps.subjects'
 ]
 
 MIDDLEWARE = [
@@ -59,9 +60,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'campus/templates'),
+            os.path.join(BASE_DIR, 'templates'),
         ],
-        'APP_DIRS': True,
+        'APP_DIRS': False,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -131,9 +132,9 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder'
 ]
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, 'static/_sass/'),
+    os.path.join(PROJECT_ROOT, 'scss/'),
 ]
-SASS_PROCESSOR_ROOT = os.path.join(PROJECT_ROOT, 'static/css/')
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static/css/')
 SASS_PROCESSOR_ENABLED = True
 
 
