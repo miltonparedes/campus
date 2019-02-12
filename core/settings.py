@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sass_processor',
 
-    'apps.users',
-    'apps.subjects'
+    'modules.users',
+    'modules.subjects'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'campus.urls'
+ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'campus.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 
 # Database
@@ -132,7 +132,7 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder'
 ]
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, 'scss/'),
+    os.path.join(BASE_DIR, 'static/_scss/'),
 ]
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static/css/')
 SASS_PROCESSOR_ENABLED = True
