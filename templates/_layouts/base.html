@@ -3,11 +3,11 @@
  <head>
   <meta charset="utf-8">
   {% load sass_tags %}
-  <link href="{% sass_src 'master.scss' %}" rel="stylesheet" type="text/css" />
-  <title> {% block title %} {% endblock title %} </title>
+  <link href="{% sass_src "campus.scss" %}" rel="stylesheet" type="text/css" />
+  <title> {% block title %} {% endblock title %} | Campus </title>
  </head>
  <body>
-  {% include '_includes/sidebar.html' %}
+  {% include "_includes/sidebar.html" %}
   {%  block content %}{% endblock content %}
  </body>
 </html>
