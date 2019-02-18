@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "master.css",
-	"sources": [
-		"master.scss"
-	],
-	"names": [],
-	"mappings": "AAAA,AAAA,IAAI,CAAA,EACF,UAAU,EAAE,IAAI,GACjB"
-}
