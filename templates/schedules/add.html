@@ -1,26 +1,67 @@
 {% extends '_layouts/base.html' %}
 
-{% block tittle %} Schedules {% endblock %}
+{% block title %} Schedules {% endblock %}
 
 {% block content %}
  <div class="">
   <h1>New Schedule</h1>
  </div>
  <div class="">
-  <table>
-   <tr>
-    <th>Hour</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-    <th>Saturday</th>
-   </tr>
-   <tr>
-    
-   </tr>
-  </table>
+  <select class="" name="">
+   <option value="">Careers</option>
+  </select>
+  <select class="" name="">
+   <option value="">Grades</option>
+  </select>
+  <form class="" action="index.html" method="post">
+   <table>
+    <tr>
+     <th>Hour</th>
+     <th>Monday</th>
+     <th>Tuesday</th>
+     <th>Wednesday</th>
+     <th>Thursday</th>
+     <th>Friday</th>
+     <th>Saturday</th>
+    </tr>
+    <tr>
+     <td>
+      <input type="text" name="" value="" placeholder="hour - hour">
+     </td>
+     <td>
+      <select class="" name="">
+       <option value="">Subjects</option>
+      </select>
+     </td>
+     <td>
+      <select class="" name="">
+       <option value="">Subjects</option>
+      </select>
+     </td>
+     <td>
+      <select class="" name="">
+       <option value="">Subjects</option>
+      </select>
+     </td>
+     <td>
+      <select class="" name="">
+       <option value="">Subjects</option>
+      </select>
+     </td>
+     <td>
+      <select class="" name="">
+       <option value="">Subjects</option>
+      </select>
+     </td>
+     <td>
+      <select class="" name="">
+       <option value="">Subjects</option>
+      </select>
+     </td>
+    </tr>
+   </table>
+   <input type="submit" name="" value="New schedule">
+  </form>
  </div>
 
 {% endblock %}
