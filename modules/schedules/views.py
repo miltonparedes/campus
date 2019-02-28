@@ -11,3 +11,13 @@ def index(request):
 def add(request):
     template = loader.get_template('schedules/add.html')
     return HttpResponse(template.render())
+
+
+def edit(request):
+    template = loader.get_template('schedules/edit.html')
+    return HttpResponse(template.render())
+
+
+def delete(request):
+    template = loader.get_template('schedules/delete.html')
+    return HttpResponse(template.render())
