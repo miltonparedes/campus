@@ -1,13 +1,43 @@
 {% load sass_tags %}
-<div class="sidebar">
-  <ul>
-    <li>
-      <a href="#">Announcements <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#circle"/></svg></a>
-    </li>
-    <li><a href="#">Payments <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#activity"/></svg></a></li>
-    <li><a href="#">Schedules</a></li>
-    <li><a href="#">Static</a></li>
-    <li><a href="#">Subjects</a></li>
-    <li><a href="#">Users</a></li>
-   </ul>
+<div class="sidebar-main">
+  <div class="sidebar-primary">
+    <div class="logo"></div>
+    <ul>
+      <li>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#search"/></svg></a>
+      </li>
+      <li>
+        <a href="/users"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#bell"/></svg></a>
+      </li>
+      <li>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#inbox"/></svg></a>
+      </li>
+      <li>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#settings"/></svg></a>
+      </li>
+    </ul>
+    <div class="user">
+      J
+    </div>
+  </div>
+  <div class="sidebar-secondary">
+    <ul>
+      <li>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#home"/></svg> Dashboard</a>
+      </li>
+      <li>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#users"/></svg> Users</a>
+      </li>
+      <li><a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#edit"/></svg> Subjects</a></li>
+      <li>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#calendar"/></svg> Schedules</a>
+      </li>
+      <li>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#credit-card"/></svg> Payments</a>
+      </li>
+      <li>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#message-circle"/></svg> Announcements</a>
+      </li>
+     </ul>
+  </div>
 </div>
