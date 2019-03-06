@@ -1,15 +1,18 @@
-body, html{
+body, html {
   margin: 0;
   height: 100%;
   font-family: 'Inter', sans-serif;
 }
+
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
+
 *{
   box-sizing: border-box;
 }
-.content{
+
+.content {
   width: calc(100% - 270px);
   padding: 30px 40px;
   float: left;
