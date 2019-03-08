@@ -1,0 +1,52 @@
+{% extends '_layouts/base.html' %}
+
+{% block tittle %} Schedules {% endblock %}
+
+{% block content %}
+ <div class="">
+  <h1>Schedules</h1>
+ </div>
+ <div class="">
+  <form class="" action="" method="post">
+   <select class="" name="carrer">
+    <option value="">Carrer</option>
+   </select>
+   <select class="" name=grade"">
+    <option value="">Grade</option>
+   </select>
+   <select class="" name="group">
+    <option value="">Group</option>
+   </select>
+   <select class="" name="cycle">
+    <option value="">Cycle</option>
+   </select>
+   <select class="" name="subject">
+    <option value="">Subject</option>
+   </select>
+   <input type="submit" name="check" value="Check">
+  </form>
+ </div>
+ <div class="table_display">
+  <table>
+   <thead>
+    <th>Hour</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Sunday</th>
+   </thead>
+   <tbody>
+    <!-- display for schedules  -->
+   </tbody>
+  </table>
+ </div>
+ <div class="">
+  <form class="options" action="" method="post">
+   <input type="submit" name="delete" value="Delete">
+   <input type="submit" name="edit" value="Edit">
+  </form>
+ </div>
+
+{% endblock %}

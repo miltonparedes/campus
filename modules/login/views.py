@@ -4,5 +4,5 @@ from django.template import loader
 
 
 def index(request):
-    template = loader.get_template('payments/index.html')
+    template = loader.get_template('login/index.html')
     return HttpResponse(template.render())
