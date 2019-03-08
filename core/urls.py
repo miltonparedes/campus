@@ -23,5 +23,6 @@ urlpatterns = [
     path('schedules/', include('modules.schedules.urls')),
     path('payments/', include('modules.payments.urls')),
     path('announcements/', include('modules.announcements.urls')),
+    path('dashboard/', include('modules.dashboard.urls')),
     path('admin/', admin.site.urls),
 ]
