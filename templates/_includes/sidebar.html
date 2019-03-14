@@ -1,43 +1,47 @@
 {% load sass_tags %}
 <div class="sidebar-main">
-  <div class="sidebar-primary">
-    <div class="logo"></div>
-    <ul>
+  <div class="logo">Campus</div>
+  <ul>
+    <li>
+      <a href="/"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#home"/></svg> Dashboard</a>
+    </li>
+    <li>
+      <a href="/users"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#users"/></svg> Users</a>
+    </li>
+    <li><a href="/subjects"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#edit"/></svg> Subjects</a></li>
+    <li>
+      <a href="/schedules"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#calendar"/></svg> Schedules</a>
+    </li>
+    <li>
+      <a href="/payments"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#credit-card"/></svg> Payments</a>
+    </li>
+    <li>
+      <a href="/announcements"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#message-circle"/></svg> Announcements</a>
+    </li>
+   </ul>
+</div>
+<div class="header-main">
+  <div class="search">
+    <input type="text" name="" value="" placeholder="Search...">
+    <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#search"/></svg>
+  </div>
+  <div class="options">
+    <ul class="menu">
       <li>
-        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#search"/></svg></a>
-      </li>
-      <li>
-        <a href="/users"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#bell"/></svg></a>
+        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#bell"/></svg></a>
       </li>
       <li>
         <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#inbox"/></svg></a>
       </li>
-      <li>
-        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#settings"/></svg></a>
-      </li>
     </ul>
-    <div class="user">
-      J
-    </div>
-  </div>
-  <div class="sidebar-secondary">
-    <ul>
-      <li>
-        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#home"/></svg> Dashboard</a>
-      </li>
-      <li>
-        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#users"/></svg> Users</a>
-      </li>
-      <li><a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#edit"/></svg> Subjects</a></li>
-      <li>
-        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#calendar"/></svg> Schedules</a>
-      </li>
-      <li>
-        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#credit-card"/></svg> Payments</a>
-      </li>
-      <li>
-        <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#message-circle"/></svg> Announcements</a>
-      </li>
-     </ul>
+    <details class="user">
+      <summary>J</summary>
+      <div class="details-menu">
+        <ul>
+          <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#settings"/></svg> Settings</a>
+          <a href="#"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#log-out"/></svg> Logout</a>
+        </ul>
+      </div>
+    </details>
   </div>
 </div>

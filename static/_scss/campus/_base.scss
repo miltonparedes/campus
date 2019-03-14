@@ -13,7 +13,20 @@ body, html {
 }
 
 .content {
-  width: calc(100% - 260px);
+  width: calc(100% - #{$sidebar-width});
   padding: 30px 40px;
   float: left;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+  text-decoration: none;
 }
