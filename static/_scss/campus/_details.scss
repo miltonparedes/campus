@@ -1,3 +1,9 @@
+details summary{
+  list-style-type: none;
+  &::-webkit-details-marker{
+    display: none;
+  }
+}
 .details-menu{
   background: #fff;
   border-radius: 6px;
