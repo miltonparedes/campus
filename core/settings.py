@@ -133,7 +133,7 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder'
 ]
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/_scss/'),
+    os.path.join(BASE_DIR, 'static/sass/'),
 ]
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static/css/')
 SASS_PROCESSOR_ENABLED = True
