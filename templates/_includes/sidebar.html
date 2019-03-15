@@ -1,22 +1,36 @@
 {% load sass_tags %}
 <div class="sidebar-main">
-  <div class="logo">Campus</div>
+  <div class="logo">campus</div>
   <ul>
     <li>
-      <a href="/"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#home"/></svg> Dashboard</a>
+      <a href="/dashboard" class="{{ dashboard_page }}">
+        <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#home"/></svg> Dashboard
+      </a>
     </li>
     <li>
-      <a href="/users"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#users"/></svg> Users</a>
-    </li>
-    <li><a href="/subjects"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#edit"/></svg> Subjects</a></li>
-    <li>
-      <a href="/schedules"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#calendar"/></svg> Schedules</a>
+      <a href="/users" class="{{ users_page }}">
+        <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#users"/></svg> Users
+      </a>
     </li>
     <li>
-      <a href="/payments"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#credit-card"/></svg> Payments</a>
+      <a href="/subjects" class="{{ subjects_page }}">
+        <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#edit"/></svg> Subjects
+      </a>
     </li>
     <li>
-      <a href="/announcements"><svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#message-circle"/></svg> Announcements</a>
+      <a href="/schedules" class="{{ schedules_page }}">
+        <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#calendar"/></svg> Schedules
+      </a>
+    </li>
+    <li>
+      <a href="/payments" class="{{ payments_page }}">
+        <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#credit-card"/></svg> Payments
+      </a>
+    </li>
+    <li>
+      <a href="/announcements" class="{{ announcements_page }}">
+        <svg class="feather"><use xlink:href="{% sass_src 'feather.svg' %}#message-circle"/></svg> Announcements
+      </a>
     </li>
    </ul>
 </div>
