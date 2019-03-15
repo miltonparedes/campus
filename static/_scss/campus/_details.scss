@@ -1,0 +1,26 @@
+details summary{
+  list-style-type: none;
+  &::-webkit-details-marker{
+    display: none;
+  }
+}
+.details-menu{
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  font-size: 12.5px;
+  ul{
+    margin: 0;
+    a{
+      font-size: 13px;
+      display: block;
+      padding: 5px 20px;
+      margin: 10px 0;
+      .feather{
+        margin-right: 12px;
+        top: 3px;
+        position: relative;
+      }
+    }
+  }
+}
