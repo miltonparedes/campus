@@ -1,7 +1,10 @@
 @charset "utf-8";
+
+@import "campus/functions";
 @import "campus/variables";
 @import url('https://rsms.me/inter/inter.css');
 @import "campus/base";
+@import "campus/grid";
 @import "campus/type";
 @import "campus/icons";
 @import "campus/header";
