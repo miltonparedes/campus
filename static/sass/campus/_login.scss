@@ -1,0 +1,36 @@
+.login{
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  .logo{
+    font-size: 38px;
+    letter-spacing: -1.5px;
+  }
+  form{
+    background: #fff;
+    padding: 56px 48px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;
+    input, button{
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 14px;
+      border-radius: 5px;
+      margin: 5px 0;
+      border: 2px solid #eee;
+    }
+    button{
+      border: none;
+      background: $primary-color;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 25px;
+    }
+  }
+}

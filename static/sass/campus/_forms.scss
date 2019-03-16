@@ -1,0 +1,19 @@
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="password"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="text"],
+.form input[type="url"],
+.form textarea,
+.form select {
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  border-radius: .4rem;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: none;
+  box-sizing: inherit;
+  padding: .6rem 1.0rem;
+  padding: .5em .6em;
+}
