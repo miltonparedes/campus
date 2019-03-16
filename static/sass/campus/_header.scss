@@ -1,53 +1,4 @@
-.sidebar-main {
-  position: sticky;
-  width: 200px;
-  height: 100%;
-  background: $primary-bg;
-  top: 0;
-  left: 0;
-  float: left;
-  padding: 20px 30px;
-
-  .logo {
-    font-weight: 600;
-    font-size: 24px;
-    letter-spacing: -1px;
-    margin-bottom: 40px;
-    display: block;
-    position: relative;
-    color: #fff;
-  }
-  ul {
-
-    li {
-
-      a {
-        color: #989eb3;
-        text-decoration: none;
-        margin: 25px 0;
-        letter-spacing: -0.2px;
-        font-size: 12.5px;
-        display: block;
-
-        .feather{
-          margin-right: 10px;
-          top: 4px;
-          position: relative;
-          color: #434d6b;
-        }
-
-        &.active {
-          color: #fff;
-          .feather{
-            color: $primary-color;
-          }
-        }
-      }
-    }
-  }
-}
-
-.header-main{
+.header {
   width: calc(100% - #{$sidebar-width});
   background: #fff;
   display: inline-flex;
@@ -58,21 +9,24 @@
   border-bottom: 1px solid #f4f4f4;
   -webkit-box-shadow: 0px 0px 40px 0px rgba(82,63,105,0.1);
     box-shadow: 0px 0px 40px 0px rgba(82,63,105,0.1);
-  ul.menu{
+
+  ul.menu {
     margin: 14px 10px;
     display: inline-block;
     float: left;
-    li{
+
+    li {
       display: inline-block;
-      a{
+
+      a {
         margin: 4px 15px;
-        .feather{
+        .feather {
           color: #b4b8ce;
         }
       }
     }
   }
-  .search{
+  .search {
     padding: 5px;
     margin: 0;
     background: #f9f9f9;
@@ -82,7 +36,8 @@
     min-width: 250px;
     border: 1px solid #f4f4f4;
     position: relative;
-    input{
+
+    input {
       border: none;
       margin: 9px 5px;
       background: #f9f9f9;
@@ -90,19 +45,23 @@
       font-size: 12.5px;
       font-weight: 600;
       width: calc(100% - 30px);
-      &:focus{
+
+      &:focus {
         outline: 0;
       }
     }
-    .feather{
+
+    .feather {
       position: absolute;
       top: 12px;
       right: 10px;
       color: #666;
     }
   }
-  .user{
+
+  .user {
     display: inline-block;
+
     summary {
       width: 35px;
       height: 35px;
@@ -118,7 +77,8 @@
       float: left;
     }
   }
-  .details-menu{
+
+  .details-menu {
     position: fixed;
     top: 69px;
     right: 15px;
