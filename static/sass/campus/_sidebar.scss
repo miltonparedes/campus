@@ -1,0 +1,33 @@
+.sidebar {
+  position: sticky;
+  width: 200px;
+  height: 100%;
+  background: $primary-bg;
+  top: 0;
+  left: 0;
+  float: left;
+  padding: 20px 30px;
+
+  ul li a {
+    color: #989eb3;
+    text-decoration: none;
+    margin: 25px 0;
+    letter-spacing: -0.2px;
+    font-size: 12.5px;
+    display: block;
+
+    .feather{
+      margin-right: 10px;
+      top: 4px;
+      position: relative;
+      color: #434d6b;
+    }
+
+    &.active {
+      color: #fff;
+      .feather{
+        color: $primary-color;
+      }
+    }
+  }
+}

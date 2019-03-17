@@ -15,6 +15,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+  &.dark-bg{
+    background: $primary-bg;
+  }
+}
+
+body, html{
+  height: 100%;
 }
 
 @supports (font-variation-settings: normal) {
@@ -191,6 +199,22 @@ template {
   float: left;
 }
 
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
 details summary::-webkit-details-marker {
   display:none;
+}
+
+
+.logo {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+  display: block;
+  position: relative;
+  color: #fff;
 }
