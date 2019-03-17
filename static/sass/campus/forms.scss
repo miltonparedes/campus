@@ -1,0 +1,30 @@
+.schedules_form{
+  background-color: #eee;
+  padding: 10px;
+}
+
+.selects{
+  font-size: 14px;
+  font-weight: 600;
+  color: $inpunts-font-color;
+  margin: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+  min-width: 30vh;
+  background-color: $inputs-bgrnd;
+  border: 2px solid lighten($primary-color, 50%);
+}
+
+.form_input{
+  background-color:$inputs-bgrnd;
+  color: $inpunts-font-color;
+  border: 2px solid lighten($primary-color, 50%);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 14px;
+}

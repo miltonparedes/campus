@@ -4,36 +4,39 @@
 
 {% block content %}
 <div class="">
- <h1>queries</h1>
+ <h1>Users</h1>
 </div>
 <div class="">
- <form class="form" action="index.html" method="post">
-  <table>
-   <tr>
-    <th>tipo de usuario</th>
-    <th>agregar filtro</th>
-    <th>input</th>
-   </tr>
-   <tr>
-    <td>
-      <select class="" name="">
-      <option value="">administrtivos</option>
-      <option value="">maestros</option>
-      <option value="">alumnos</option>
-     </select>
-    </td>
-     <td>
-      <select class="" name="">
-       <option value="">agregar filtro</option>
-      </select>
-     </td>
-    <td>
-      <input type="text" name="">
-    </td>
-    <td>
-      <button type="button" name="button">send</button>
-    </td>
-  </table>
+
+ <form class="" action="index.html" method="post">
+  <select class="selects" name="">
+   <option value="">administrtivos</option>
+   <option value="">maestros</option>
+   <option value="">alumnos</option>
+  </select>
+  <select class="selects" name="">
+   <option value="">agregar filtro</option>
+  </select>
+  <input type="text" name="">
+  <button type="button" name="button" class="btn">send</button>
  </form>
+ <table>
+  <thead>
+   <tr>
+    <th>N°</th>
+    <th>Name</th>
+    <th>Last name</th>
+    <th></th>
+   </tr>
+  </thead>
+   <tbody>
+    <tr>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+    </tr>
+   </tbody>
+  </table>
 </div>
 {% endblock %}
