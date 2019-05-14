@@ -6,10 +6,7 @@
   <link href="{% sass_src "campus.scss" %}" rel="stylesheet" type="text/css" />
   <title> {% block title %} {% endblock title %} | Campus </title>
  </head>
- <body>
-  {% include "_includes/sidebar.html" %}
-  <div class="content">
-    {%  block content %}{% endblock content %}
-  </div>
+ <body class="dark-bg">
+  {% include "_includes/login.html" %}
  </body>
 </html>

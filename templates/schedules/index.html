@@ -1,29 +1,29 @@
 {% extends '_layouts/base.html' %}
 
-{% block tittle %} Schedules {% endblock %}
+{% block title %} Schedules {% endblock %}
 
 {% block content %}
  <div class="">
   <h1>Schedules</h1>
  </div>
  <div class="">
-  <form class="" action="" method="post">
-   <select class="" name="carrer">
-    <option value="">Carrer</option>
+  <form class="schedules_form" action="" method="post">
+   <select class="selects" name="career">
+    <option value="">Career</option>
    </select>
-   <select class="" name=grade"">
+   <select class="selects" name=grade"">
     <option value="">Grade</option>
    </select>
-   <select class="" name="group">
+   <select class="selects" name="group">
     <option value="">Group</option>
    </select>
-   <select class="" name="cycle">
+   <select class="selects" name="cycle">
     <option value="">Cycle</option>
    </select>
-   <select class="" name="subject">
+   <select class="selects" name="subject">
     <option value="">Subject</option>
    </select>
-   <input type="submit" name="check" value="Check">
+   <input type="submit" name="check" value="Search" class="btn">
   </form>
  </div>
  <div class="table_display">
@@ -44,8 +44,8 @@
  </div>
  <div class="">
   <form class="options" action="" method="post">
-   <input type="submit" name="delete" value="Delete">
-   <input type="submit" name="edit" value="Edit">
+   <input type="submit" name="delete" value="Delete" class="btn">
+   <input type="submit" name="edit" value="Edit" class="btn">
   </form>
  </div>
 

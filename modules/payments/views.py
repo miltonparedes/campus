@@ -5,4 +5,5 @@ from django.template import loader
 
 def index(request):
     template = loader.get_template('payments/index.html')
-    return HttpResponse(template.render())
+    context = {"payments_page": "active"}
+    return HttpResponse(template.render(context))

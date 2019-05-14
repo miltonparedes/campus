@@ -5,4 +5,5 @@ from django.template import loader
 
 def index(request):
     template = loader.get_template('login/index.html')
-    return HttpResponse(template.render())
+    context = {"login:_page": "active"}
+    return HttpResponse(template.render(context))
