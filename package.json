@@ -1,0 +1,25 @@
+{
+  "name": "campus-assets",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm-run-all css css-minify",
+    "css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 node_modules/@hyphev/below/index.scss static/css/below.min.css",
+    "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output static/css/below.min.css static/css/below.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyphev/campus.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyphev/campus/issues"
+  },
+  "homepage": "https://github.com/hyphev/campus#readme",
+  "dependencies": {
+    "@hyphev/below": "^1.0.3",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

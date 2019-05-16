@@ -86,5 +86,4 @@ local_settings.py
 .env
 db.sqlite3
 
-# CSS
-static/css/
+node_modules
