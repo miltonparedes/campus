@@ -125,7 +125,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/css/'
+STATIC_URL = '/static/'
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -133,9 +133,9 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder'
 ]
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/sass/'),
+    os.path.join(BASE_DIR, 'static/'),
 ]
-SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static/css/')
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static/')
 SASS_PROCESSOR_ENABLED = True
 
 
