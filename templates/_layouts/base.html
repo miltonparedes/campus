@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
- <head>
+<head>
   <meta charset="utf-8">
   {% load static %}
   <link href="{% static "css/below.min.css" %}" rel="stylesheet" type="text/css" />
   <title> {% block title %} {% endblock title %} | Campus </title>
  </head>
  <body>
-  {% include "_includes/sidebar.html" %}
-  <div class="content">
-    {%  block content %}{% endblock content %}
+  {% include  "_includes/header.html"%}
+  <div class="container-fluid">
+    <div class="row">
+      {% include "_includes/sidebar.html" %}
+      <div class="content">
+        {%  block content %}{% endblock content %}
+      </div>
+    </div>
   </div>
  </body>
 </html>
