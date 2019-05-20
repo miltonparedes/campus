@@ -12,7 +12,9 @@
     <div class="row">
       {% include "_includes/sidebar.html" %}
       <div class="content">
-        {%  block content %}{% endblock content %}
+        <div class="container-fluid">
+            {%  block content %}{% endblock content %}
+        </div>
       </div>
     </div>
   </div>
