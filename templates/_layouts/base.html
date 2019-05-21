@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
- <head>
+<head>
   <meta charset="utf-8">
-  {% load sass_tags %}
-  <link href="{% sass_src "campus.scss" %}" rel="stylesheet" type="text/css" />
-  <title> {% block title %} {% endblock title %} | Campus </title>
+  {% load static %}
+  <link href="{% static "font-files/inter.min.css" %}" rel="stylesheet" type="text/css" />
+  <link href="{% static "css/below.min.css" %}" rel="stylesheet" type="text/css" />
+  <title>Campus {% block title %}{% endblock title %}</title>
  </head>
  <body>
-  {% include "_includes/sidebar.html" %}
-  <div class="content">
-    {%  block content %}{% endblock content %}
+  {% include  "_includes/header.html"%}
+  <div class="container-fluid">
+    <div class="row">
+      {% include "_includes/sidebar.html" %}
+      <div class="content col-12 col-md-9 col-xl-10">
+        <div class="container-fluid">
+            {%  block content %}{% endblock content %}
+        </div>
+      </div>
+    </div>
   </div>
  </body>
 </html>

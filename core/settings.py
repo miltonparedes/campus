@@ -38,11 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sass_processor',
 
     'modules.login',
-    'modules.users',
-    'modules.subjects'
+    'modules.admin.users',
+    'modules.admin.subjects',
+    'modules.admin.dashboard',
 ]
 
 MIDDLEWARE = [
@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates/'),
         ],
         'APP_DIRS': False,
         'OPTIONS': {
@@ -125,21 +125,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/css/'
+STATIC_URL = '/static/'
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'sass_processor.finders.CssFinder'
 ]
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/sass/'),
+    os.path.join(BASE_DIR, 'static/'),
 ]
-SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static/css/')
-SASS_PROCESSOR_ENABLED = True
-
-
-SASS_PROCESSOR_AUTO_INCLUDE = False
-SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
-SASS_PRECISION = 8
-SASS_OUTPUT_STYLE = 'compact'
