@@ -5,14 +5,14 @@
   {% load static %}
   <link href="{% static "font-files/inter.min.css" %}" rel="stylesheet" type="text/css" />
   <link href="{% static "css/below.min.css" %}" rel="stylesheet" type="text/css" />
-  <title> {% block title %} {% endblock title %} | Campus </title>
+  <title>Campus {% block title %}{% endblock title %}</title>
  </head>
  <body>
   {% include  "_includes/header.html"%}
   <div class="container-fluid">
     <div class="row">
       {% include "_includes/sidebar.html" %}
-      <div class="content col-10">
+      <div class="content col-12 col-md-9 col-xl-10">
         <div class="container-fluid">
             {%  block content %}{% endblock content %}
         </div>
