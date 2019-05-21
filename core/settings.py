@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sass_processor',
 
     'modules.login',
     'modules.users',
@@ -130,16 +129,7 @@ STATIC_URL = '/static/'
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'sass_processor.finders.CssFinder'
 ]
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
-SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'static/')
-SASS_PROCESSOR_ENABLED = True
-
-
-SASS_PROCESSOR_AUTO_INCLUDE = False
-SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
-SASS_PRECISION = 8
-SASS_OUTPUT_STYLE = 'compact'
