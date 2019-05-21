@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'modules.login',
-    'modules.users',
-    'modules.subjects'
+    'modules.admin.users',
+    'modules.admin.subjects',
+    'modules.admin.dashboard',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates/'),
         ],
         'APP_DIRS': False,
         'OPTIONS': {
