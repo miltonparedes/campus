@@ -4,22 +4,22 @@ from django.template import loader
 
 
 def index(request):
-    template = loader.get_template('admin/announcements/index.html')
-    context = {"announcements_page": "active"}
+    template = loader.get_template('admin/notices/index.html')
+    context = {"notices_page": "active"}
     return HttpResponse(template.render(context))
 
 
 def add(request):
-    template = loader.get_template('admin/announcements/add.html')
-    context = {"announcements_page_add": "active"}
+    template = loader.get_template('admin/notices/add.html')
+    context = {"notices_page_add": "active"}
     return HttpResponse(template.render(context))
 
 
 def edit(request):
-    template = loader.get_template('admin/announcements/edit.html')
+    template = loader.get_template('admin/notices/edit.html')
     return HttpResponse(template.render())
 
 
 def delete(request):
-    template = loader.get_template('admin/announcements/delete.html')
+    template = loader.get_template('admin/notices/delete.html')
     return HttpResponse(template.render())

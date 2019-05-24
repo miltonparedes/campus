@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     'modules.login',
     'modules.admin.users',
-    'modules.admin.subjects',
+    'modules.admin.courses',
     'modules.admin.dashboard',
 ]
 
