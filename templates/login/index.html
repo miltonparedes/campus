@@ -1,1 +1,22 @@
-{% extends '_layouts/login.html' %}
+{% extends 'layouts/single-page.html' %}
+{% block title %} Log-in {% endblock %}
+{% block content %}
+<form class="form">
+  <fieldset>
+    <legend>A compact inline form</legend>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <div class="form-controls">
+      <!--  Checkbox -->
+      <label for="remember" class="form-input-check">
+        <input id="remember" type="checkbox" value="">
+        <span class="check-mark"></span> Remember me
+      </label>
+    </div>
+
+    <button type="submit" class="btn">Sign in</button>
+  </fieldset>
+</form>
+{% endblock content %}

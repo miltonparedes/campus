@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/hyphev/campus#readme",
   "dependencies": {
-    "@hyphev/below": "^1.0.5",
+    "@hyphev/below": "^1.0.6",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5"
