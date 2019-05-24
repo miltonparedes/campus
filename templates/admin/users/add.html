@@ -1,7 +1,67 @@
 {% extends 'layouts/page.html' %}
+{% load static %}
 
 {% block title %} Users {% endblock %}
 
 {% block content %}
- <h1>Add User</h1>
+<div class="row">
+  <h1>Add User</h1>
+</div>
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <form class="form form-aligned" action="" method="post">
+          <div class="form-control-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="form-input" name="name" placeholder="Name">
+          </div>
+          <div class="form form-control-group">
+            <label for="last-name-a">Last name</label>
+            <input id="last-name-A" type="text" class="form-input" name="last-name-a" placeholder="Last name">
+          </div>
+          <div class="form form-control-group">
+            <label for="last-name-b">Mother's last name</label>
+            <input id ="last-name-b"type="text" class="form-input" name="last-name-b" placeholder="Mother's last name">
+          </div>
+          <div class="form form-control-group">
+
+          </div>
+          <input type="number" class="form-input" name="age" placeholder="Age">
+          <input type="email" name="email" placeholder="e-mail">
+          <input type="text" name="address" placeholder="Address">
+          <input type="text" name="enrllment" placeholder="Enrrolment">
+          <label for="rol">Rol</label>
+          <div class="container-select">
+            <select class="select" id="rol">
+              <option value="admin">Administrative</option>
+              <option value="teachers">Teachers</option>
+              <option value="student">Student</option>
+            </select>
+            <svg class=icon>
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+            </svg>
+          </div>
+
+          <label for="career">Carrer</label>
+          <div class="container-select">
+            <select class="select" id="career">
+              <option value="career_1">Career 1</option>
+              <option value="career_2">Career 2</option>
+              <option value="career_3">Career 3</option>
+            </select>
+            <svg class="icon">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+            </svg>
+          </div>
+
+          <button class="btn" name="send">Add</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+
 {% endblock %}
