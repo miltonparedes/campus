@@ -23,37 +23,107 @@
           </div>
           <div class="form form-control-group">
             <label for="last-name-b">Mother's last name</label>
-            <input id ="last-name-b"type="text" class="form-input" name="last-name-b" placeholder="Mother's last name">
+            <input id="last-name-b"type="text" class="form-input" name="last-name-b" placeholder="Mother's last name">
           </div>
           <div class="form form-control-group">
-
+            <label for="age">Age</label>
+            <input id="age" type="number" class="form-input" name="age" placeholder="Age">
           </div>
-          <input type="number" class="form-input" name="age" placeholder="Age">
-          <input type="email" name="email" placeholder="e-mail">
-          <input type="text" name="address" placeholder="Address">
-          <input type="text" name="enrllment" placeholder="Enrrolment">
-          <label for="rol">Rol</label>
-          <div class="container-select">
-            <select class="select" id="rol">
-              <option value="admin">Administrative</option>
-              <option value="teachers">Teachers</option>
-              <option value="student">Student</option>
-            </select>
-            <svg class=icon>
-              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
-            </svg>
+          <div class="form form-control-group">
+            <label for="birth-date">Birth date</label>
+            <input id="birth-date" type="date" class="form-input" name="birth-date">
           </div>
-
-          <label for="career">Carrer</label>
-          <div class="container-select">
-            <select class="select" id="career">
-              <option value="career_1">Career 1</option>
-              <option value="career_2">Career 2</option>
-              <option value="career_3">Career 3</option>
-            </select>
-            <svg class="icon">
-              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
-            </svg>
+          <div class="form form-control-group">
+            <label for="gender" class="form-input-radio">Gender</label>
+            <label for="female" class="form-input-radio">
+              <input id="female" type="radio" name="radio" value="female" checked>
+              <span class="radiomark"></span>
+              Female
+            </label>
+            <label for="male" class="form-input-radio">
+              <input id="male" type="radio" name="radio" value="male" checked>
+              <span class="radiomark"></span>
+              Male
+            </label>
+          </div>
+          <div class="form form-control-group">
+            <label for="email">e-mail</label>
+            <input id="email" type="email" name="email" placeholder="e-mail">
+          </div>
+          <div class="form form-control-group">
+            <label for="cellphone">Cellphone number</label>
+            <input id="cellphone" type="tel" name="cellphone" placeholder="Cellphone numeber">
+          </div>
+          <div class="form form-control-group">
+            <label for="phone">Phone number</label>
+            <input id="phone" type="tel" name="phone" placeholder="Phone number">
+          </div>
+          <div class="form form-control-group">
+            <label for="address">Address</label>
+            <input id="address" type="text" name="address" placeholder="Address">
+          </div>
+          <div class="form form-control-group">
+            <label for="enrrolment">Enrrolment</label>
+            <input id="enrrolment" type="text" name="enrollment" placeholder="Enrrolment">
+          </div>
+          <div class="form form-control-group">
+            <label for="rol">Rol</label>
+            <div class="container-select">
+              <select class="select" id="rol">
+                <option value="admin">Administrative</option>
+                <option value="teachers">Teachers</option>
+                <option value="student">Student</option>
+              </select>
+              <svg class=icon>
+                <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+              </svg>
+            </div>
+          </div>
+          <div class="form form-control-group">
+            <label for="career">Carrer</label>
+            <div class="container-select">
+              <select class="select" id="career">
+                <option value="career_1">Career 1</option>
+                <option value="career_2">Career 2</option>
+                <option value="career_3">Career 3</option>
+              </select>
+              <svg class="icon">
+                <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+              </svg>
+            </div>
+          </div>
+          <div class="form form-control-group">
+            <label for="semester">Semester</label>
+            <div class="container-select">
+              <select class="select" name="semester">
+                <option value="first">1st Semester</option>
+                <option value="second">2nd Semester</option>
+                <option value="third">3rd Semester</option>
+                <option value="fourth">4th Semester</option>
+                <option value="fifh">5th Semester</option>
+                <option value="sixth">6th Semester</option>
+                <option value="seventh">7th Semester</option>
+                <option value="eighth">8th Semester</option>
+                <option value="nineth">9th Semester</option>
+                <option value="tenth">10th Semester</option>
+                <option value="other">other</option>
+              </select>
+              <svg class="icon">
+                <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+              </svg>
+            </div>
+          </div>
+          <div class="form form-control-group">
+            <label for="shift">Shift</label>
+            <div class="container-select">
+              <select class="select" name="shift">
+                <option value="morning">Morning shift</option>
+                <option value="afternoon">Afternoon shift</option>
+              </select>
+              <svg class="icon">
+                <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+              </svg>
+            </div>
           </div>
 
           <button class="btn" name="send">Add</button>
