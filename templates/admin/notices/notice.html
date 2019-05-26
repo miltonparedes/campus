@@ -1,0 +1,37 @@
+{% extends 'layouts/page.html' %}
+{% load static %}
+
+{% block title %} Notice {% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-12 col-lg-9">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <svg class="icon icon-big">
+            <use xlink:href="{% static 'feather.svg' %}#mail"/>
+          </svg>
+          Extraordinary evaluations - Second chance
+        </div>
+        <span class="tag tag-secondary">
+          Friday, 20th May, 2019
+        </span>
+      </div>
+      <div class="card-body">
+        <b>To All Careers</b>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
+          Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
+          Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
+        </p>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Edit</button>
+        <button class="btn btn-error">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

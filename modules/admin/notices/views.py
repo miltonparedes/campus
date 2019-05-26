@@ -20,6 +20,6 @@ def edit(request):
     return HttpResponse(template.render())
 
 
-def delete(request):
-    template = loader.get_template('admin/notices/delete.html')
+def notice(request):
+    template = loader.get_template('admin/notices/notice.html')
     return HttpResponse(template.render())
