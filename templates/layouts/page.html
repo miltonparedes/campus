@@ -6,6 +6,7 @@
   <div class="row">
     {% include "includes/sidebar.html" %}
     <div class="content col-12 col-md-9 col-xl-10">
+      <h1>{%  block title %}{% endblock title %}</h1>
       {%  block content %}{% endblock content %}
     </div>
   </div>
