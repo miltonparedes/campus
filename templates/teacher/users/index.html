@@ -1,0 +1,123 @@
+{% extends 'layouts/page.html' %}
+{% load static %}
+
+{% block title %} Users {% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-12 col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <form class="form"  action="" method="post">
+          <div class="container-select">
+            <select class="select" name="">
+              <option value="admin">Administrative</option>
+              <option value="teacher">Teachers</option>
+              <option value="students">Students</option>
+            </select>
+            <svg class="icon">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+            </svg>
+          </div>
+
+          <div class="container-select">
+            <select class="select" name="">
+              <option value="career_1">Career 1</option>
+              <option value="career_2">Career 2</option>
+              <option value="career_3">Career 3</option>
+            </select>
+            <svg class="icon">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+            </svg>
+          </div>
+
+          <div class="container-select">
+            <select class="select" name="">
+              <option value="first">1st Semester</option>
+              <option value="second">2nd Semester</option>
+              <option value="third">3rd Semester</option>
+              <option value="fourth">4th Semester</option>
+              <option value="fifh">5th Semester</option>
+              <option value="sixth">6th Semester</option>
+              <option value="seventh">7th Semester</option>
+              <option value="eighth">8th Semester</option>
+              <option value="nineth">9th Semester</option>
+            </select>
+            <svg class="icon">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+            </svg>
+          </div>
+
+          <input type="text" class="form-input" placeholder="Specific search" name="" value="">
+
+          <button class="btn" name="send">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <table class="table ">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Name</th>
+              <th>Last name</th>
+              <th>Rol</th>
+              <th>Career</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <details class="dropdown">
+                  <summary>
+                    <svg class="icon">
+                      <use xlink:href="{% static 'feather.svg' %}#more-vertical"/>
+                    </svg>
+                  </summary>
+                  <ul class="dropdown-content">
+                    <li><a class="dropdown-item" href="/users/edit">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="pagination">
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-left"/>
+        </svg>
+      </a>
+      <a class="pagination-item" href="#">1</a>
+      <a class="pagination-item active" href="#">2</a>
+      <a class="pagination-item" href="#">3</a>
+      <a class="pagination-item" href="#">4</a>
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-right"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
