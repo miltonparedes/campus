@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'modules.admin.dashboard',
     'modules.students.courses',
     'modules.students.dashboard',
-    'modules.students.noticies',
+    'modules.students.notices',
     'modules.students.schedules',
     'modules.students.users',
 ]
