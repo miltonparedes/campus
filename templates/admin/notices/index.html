@@ -4,43 +4,100 @@
 {% block title %} Notices {% endblock %}
 
 {% block content %}
- <div class="">
-  <h1>Notices</h1>
- </div>
- <div class="">
-  <form class="" action="index.html" method="post">
-   <select class="selects" name="career">
-    <option value="">Career</option>
-    <option value="">All</option>
-   </select>
-   <select class="selects" name="grade">
-    <option value="">Grade</option>
-   </select>
-   <select class="selects" name="group">
-    <option value="">Group</option>
-   </select>
-   <input type="text" name="user" value="" placeholder="user" class="form_input">
-  </form>
- </div>
- <div class="query_display">
-  <table>
-   <thead>
-    <th>N°</th>
-    <th>Announcement</th>
-    <th>Addressee</th>
-    <th>Options</th>
-   </thead>
-   <tbody>
-    <td>1</td>
-    <td>Announcement extract</td>
-    <td>name(s)</td>
-    <td>
-     <form class="" action="index.html" method="post">
-      <input type="submit" name="" value="Delete" class="btn btn-small">
-     </form>
-    </td>
-   </tbody>
-  </table>
- </div>
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <form class="form"  action="" method="post">
+          <div class="container-select">
+            <select class="select" name="">
+              <option value="admin">All Careers</option>
+              <option value="teacher">Arquitecture</option>
+              <option value="students">S.C.</option>
+              <option value="students">Administration</option>
+            </select>
+            <svg class="icon">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+            </svg>
+          </div>
+          <input type="text" class="form-input" placeholder="Subject" name="" value="">
+          <textarea class="form-input" placeholder="Message"></textarea>
+          <button class="btn" name="send">Create Notice</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <table class="table ">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>To</th>
+              <th>Subject</th>
+              <th>Date</th>
+              <th>Message</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>All Careers</td>
+              <td>Extraordinary evaluations - Second chance</td>
+              <td>Friday, 20th May, 2019</td>
+              <td>
 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam sed sem aliquam, iaculis neque in, aliquet lorem...
+              </td>
+              <td>
+                <a class="btn" href="notice">
+                  See
+                </a>
+              </td>
+              <td>
+                <details class="dropdown">
+                  <summary>
+                    <svg class="icon">
+                      <use xlink:href="{% static 'feather.svg' %}#more-vertical"/>
+                    </svg>
+                  </summary>
+                  <ul class="dropdown-content">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="pagination">
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-left"/>
+        </svg>
+      </a>
+      <a class="pagination-item" href="#">1</a>
+      <a class="pagination-item active" href="#">2</a>
+      <a class="pagination-item" href="#">3</a>
+      <a class="pagination-item" href="#">4</a>
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-right"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
 {% endblock %}

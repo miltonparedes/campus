@@ -1,22 +1,27 @@
 {% extends 'layouts/single-page.html' %}
-{% block title %} Log-in {% endblock %}
+
+{% block title %} Login {% endblock %}
+
 {% block content %}
-<form class="form">
-  <fieldset>
-    <legend>A compact inline form</legend>
 
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-
-    <div class="form-controls">
-      <!--  Checkbox -->
-      <label for="remember" class="form-input-check">
-        <input id="remember" type="checkbox" value="">
-        <span class="check-mark"></span> Remember me
-      </label>
+<div class="container">
+  <div class="row" style="justify-content:center;align-items:center;">
+    <div class="col-sm-6">
+      <div class="card">
+        <h5 style="text-align: center;">campus</h5>
+        <form class="form form-stacked">
+          <div class="card-body">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" name="username">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" name="password">
+          </div>
+          <div class="card-footer">
+            <button type="submit" class="btn btn-medium">Sign in</button>
+          </div>
+        </form>
+      </div>
     </div>
-
-    <button type="submit" class="btn">Sign in</button>
-  </fieldset>
-</form>
+  </div>
+</div>
 {% endblock content %}
