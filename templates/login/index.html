@@ -4,23 +4,23 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container-fuid">
   <div class="row" style="justify-content:center;align-items:center;">
     <div class="col-sm-6">
-      <div class="card">
-        <h5 style="text-align: center;">campus</h5>
-        <form class="form form-stacked">
-          <div class="card-body">
-            <label for="username">Username</label>
-            <input type="text" placeholder="Username" name="username">
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" name="password">
-          </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-medium">Sign in</button>
-          </div>
-        </form>
-      </div>
+      <h5 class="text-center">campus</h5>
+    </div>
+    <div class="col-sm-6">
+      <form class="form">
+        <div class="card-body">
+          <label for="username">Username</label>
+          <input class="form-control" type="text" placeholder="Username" name="username">
+          <label for="password">Password</label>
+          <input class="form-control" type="password" placeholder="Password" name="password">
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-medium">Login</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

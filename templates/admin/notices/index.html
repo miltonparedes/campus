@@ -8,21 +8,31 @@
   <div class="col">
     <div class="card">
       <div class="card-body">
-        <form class="form"  action="" method="post">
-          <div class="container-select">
-            <select class="select" name="">
-              <option value="admin">All Careers</option>
-              <option value="teacher">Arquitecture</option>
-              <option value="students">S.C.</option>
-              <option value="students">Administration</option>
-            </select>
-            <svg class="icon">
-              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
-            </svg>
+        <form class="form">
+          <div class="form-row">
+            <div class="col-6 col-md-3">
+              <div class="form-control">
+                <select class="select" name="">
+                  <option value="admin">All Careers</option>
+                  <option value="teacher">Arquitecture</option>
+                  <option value="students">S.C.</option>
+                  <option value="students">Administration</option>
+                </select>
+                <svg class="icon">
+                  <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                </svg>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <input type="text" class="form-control" placeholder="Subject" name="" value="">
+            </div>
+            <div class="col-6 col-md-3">
+              <textarea class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="col-6 col-md-3">
+              <button class="btn" name="send" type="submit">Create Notice</button>
+            </div>
           </div>
-          <input type="text" class="form-input" placeholder="Subject" name="" value="">
-          <textarea class="form-input" placeholder="Message"></textarea>
-          <button class="btn" name="send">Create Notice</button>
         </form>
       </div>
     </div>
