@@ -1,0 +1,109 @@
+{% extends 'layouts/tch_page.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+  <div class="row">
+    <h1>Campus</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#trending-up"/></svg>
+            Grades
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Students grades, sorted in global and by career.
+          </p>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#users"/></svg>
+            Users
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Number of current users displayed as a list.
+            <ul>
+              <li>Admin</li>
+              <li>Teachers</li>
+              <li>Students (global and by career)</li>
+            </ul>
+          </p>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#edit"/></svg>
+            Courses
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Current number of courses, sorter by carrer, each one with worload
+          </p>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#message-circle"/></svg>
+            Notices
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            last announcement
+          </p>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#list"/></svg>
+            Other
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

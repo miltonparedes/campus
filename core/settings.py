@@ -43,6 +43,18 @@ INSTALLED_APPS = [
     'modules.admin.users',
     'modules.admin.courses',
     'modules.admin.dashboard',
+    'modules.admin.notices',
+    'modules.admin.schedules',
+    'modules.student.std_courses',
+    'modules.student.std_dashboard',
+    'modules.student.std_notices',
+    'modules.student.std_schedules',
+    'modules.student.std_users',
+    'modules.teacher.tch_courses',
+    'modules.teacher.tch_dashboard',
+    'modules.teacher.tch_notices',
+    'modules.teacher.tch_schedules',
+    'modules.teacher.tch_users',
 ]
 
 MIDDLEWARE = [

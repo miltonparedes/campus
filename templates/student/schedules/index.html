@@ -1,0 +1,53 @@
+{% extends 'layouts/std_page.html' %}
+{% load static %}
+
+{% block title %} Schedules {% endblock %}
+
+{% block content %}
+ <div class="">
+  <h1>Schedules</h1>
+ </div>
+ <div class="">
+  <form class="schedules_form" action="" method="post">
+   <select class="selects" name="career">
+    <option value="">Career</option>
+   </select>
+   <select class="selects" name=grade"">
+    <option value="">Grade</option>
+   </select>
+   <select class="selects" name="group">
+    <option value="">Group</option>
+   </select>
+   <select class="selects" name="cycle">
+    <option value="">Cycle</option>
+   </select>
+   <select class="selects" name="subject">
+    <option value="">Subject</option>
+   </select>
+   <input type="submit" name="check" value="Search" class="btn">
+  </form>
+ </div>
+ <div class="table_display">
+  <table>
+   <thead>
+    <th>Hour</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Sunday</th>
+   </thead>
+   <tbody>
+    <!-- display for schedules  -->
+   </tbody>
+  </table>
+ </div>
+ <div class="">
+  <form class="options" action="" method="post">
+   <input type="submit" name="delete" value="Delete" class="btn">
+   <input type="submit" name="edit" value="Edit" class="btn">
+  </form>
+ </div>
+
+{% endblock %}

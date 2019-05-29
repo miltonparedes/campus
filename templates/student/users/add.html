@@ -1,0 +1,186 @@
+{% extends 'layouts/std_page.html' %}
+{% load static %}
+
+{% block title %} Add User {% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-12 col-lg-9">
+    <div class="card">
+      <div class="card-body">
+        <form class="form" action="" method="post">
+          <div class="folding-group">
+            <details class="folding" open>
+              <summary class="folding-title">
+                Basic info
+                <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.sv' %}g#chevron-down"/></svg>
+              </summary>
+              <div class="folding-content">
+                <div class=row>
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <label for="name">Name</label>
+                      <input id="name" type="text" class="form-input" name="name" placeholder="Name">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="last-name-a">Last name</label>
+                    <input id="last-name-A" type="text" class="form-input" name="last-name-a" placeholder="Last name">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="last-name-b">Mother's last name</label>
+                    <input id="last-name-b"type="text" class="form-input" name="last-name-b" placeholder="Mother's last name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="age">Age</label>
+                    <input id="age" type="number" class="form-input" name="age" placeholder="Age">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="birth-date">Birth date</label>
+                    <input id="birth-date" type="date" class="form-input" name="birth-date">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <label for="Gener">Gender</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <label for="female" class="form-input-radio">
+                          <input id="female" type="radio" name="radio" value="female" checked>
+                          <span class="radiomark"></span>
+                          Female
+                        </label>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <label for="male" class="form-input-radio">
+                          <input id="male" type="radio" name="radio" value="male" checked>
+                          <span class="radiomark"></span>
+                          Male
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details class="folding">
+              <summary class="folding-title">
+                Contact info
+                <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.svg' %}#chevron-down"/></svg>
+              </summary>
+              <div class="folding-content">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="email">e-mail</label>
+                    <input id="email" type="email" name="email" placeholder="e-mail">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="address">Address</label>
+                    <input id="address" type="text" name="address" placeholder="Address">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="cellphone">Cellphone number</label>
+                    <input id="cellphone" type="tel" name="cellphone" placeholder="Cellphone numeber">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="tel" name="phone" placeholder="Phone number">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="enrrolment">Enrrolment</label>
+                    <input id="enrrolment" type="text" name="enrollment" placeholder="Enrrolment">
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details class="folding">
+              <summary class="folding-title">
+                Rol info
+                <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.svg' %}#chevron-down"/></svg>
+              </summary>
+              <div class="folding-content">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="rol">Rol</label>
+                    <div class="container-select">
+                      <select class="select" id="rol">
+                        <option value="admin">Administrative</option>
+                        <option value="teachers">Teachers</option>
+                        <option value="student">Student</option>
+                      </select>
+                      <svg class=icon>
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="career">Carrer</label>
+                    <div class="container-select">
+                      <select class="select" id="career">
+                        <option value="career_1">Career 1</option>
+                        <option value="career_2">Career 2</option>
+                        <option value="career_3">Career 3</option>
+                      </select>
+                      <svg class="icon">
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="semester">Semester</label>
+                    <div class="container-select">
+                      <select class="select" name="semester">
+                        <option value="first">1st Semester</option>
+                        <option value="second">2nd Semester</option>
+                        <option value="third">3rd Semester</option>
+                        <option value="fourth">4th Semester</option>
+                        <option value="fifh">5th Semester</option>
+                        <option value="sixth">6th Semester</option>
+                        <option value="seventh">7th Semester</option>
+                        <option value="eighth">8th Semester</option>
+                        <option value="nineth">9th Semester</option>
+                        <option value="tenth">10th Semester</option>
+                        <option value="other">other</option>
+                      </select>
+                      <svg class="icon">
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="shift">Shift</label>
+                    <div class="container-select">
+                      <select class="select" name="shift">
+                        <option value="morning">Morning shift</option>
+                        <option value="afternoon">Afternoon shift</option>
+                      </select>
+                      <svg class="icon">
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn" name="send">Add User</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

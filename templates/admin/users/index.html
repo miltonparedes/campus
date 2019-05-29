@@ -1,12 +1,11 @@
-{% extends 'layouts/page.html' %}
+{% extends 'layouts/adm_page.html' %}
 {% load static %}
 
 {% block title %} Users {% endblock %}
 
 {% block content %}
-<h1>Users</h1>
 <div class="row">
-  <div class="col">
+  <div class="col-12 col-lg-12">
     <div class="card">
       <div class="card-body">
         <form class="form"  action="" method="post">
@@ -88,7 +87,7 @@
                     </svg>
                   </summary>
                   <ul class="dropdown-content">
-                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="/users/edit">Edit</a></li>
                     <li><a class="dropdown-item" href="#">Delete</a></li>
                   </ul>
                 </details>
@@ -97,6 +96,27 @@
           </tbody>
         </table>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="pagination">
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-left"/>
+        </svg>
+      </a>
+      <a class="pagination-item" href="#">1</a>
+      <a class="pagination-item active" href="#">2</a>
+      <a class="pagination-item" href="#">3</a>
+      <a class="pagination-item" href="#">4</a>
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-right"/>
+        </svg>
+      </a>
     </div>
   </div>
 </div>
