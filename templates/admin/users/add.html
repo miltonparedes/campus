@@ -16,51 +16,39 @@
                 <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.sv' %}g#chevron-down"/></svg>
               </summary>
               <div class="folding-content">
-                <div class=row>
+                <div class=form-row>
                   <div class="col-12 col-md-6 col-lg-4">
                       <label for="name">Name</label>
-                      <input id="name" type="text" class="form-input" name="name" placeholder="Name">
+                      <input id="name" type="text" class="form-control" name="name" placeholder="Name">
                   </div>
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="last-name-a">Last name</label>
-                    <input id="last-name-A" type="text" class="form-input" name="last-name-a" placeholder="Last name">
+                    <input id="last-name-A" type="text" class="form-control" name="last-name-a" placeholder="Last name">
                   </div>
-                  <div class="col-12 col-md-6 col-lg-4">
-                    <label for="last-name-b">Mother's last name</label>
-                    <input id="last-name-b"type="text" class="form-input" name="last-name-b" placeholder="Mother's last name">
-                  </div>
-                </div>
-                <div class="row">
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="age">Age</label>
-                    <input id="age" type="number" class="form-input" name="age" placeholder="Age">
+                    <input id="age" type="number" class="form-control" name="age" placeholder="Age">
                   </div>
+                </div>
+
+                <div class="form-row">
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="birth-date">Birth date</label>
-                    <input id="birth-date" type="date" class="form-input" name="birth-date">
+                    <input id="birth-date" type="date" class="form-control" name="birth-date">
                   </div>
                   <div class="col-12 col-md-6 col-lg-4">
-                    <div class="row">
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <label for="Gener">Gender</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <label for="female" class="form-input-radio">
+                    <label for="Gener">Gender</label>
+                        <label for="female" class="form-input-radio-inline">
                           <input id="female" type="radio" name="radio" value="female" checked>
-                          <span class="radiomark"></span>
+                          <span class="radio-control"></span>
                           Female
                         </label>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <label for="male" class="form-input-radio">
-                          <input id="male" type="radio" name="radio" value="male" checked>
-                          <span class="radiomark"></span>
+                        <label for="male" class="form-input-radio-inline">
+                          <input id="male" type="radio" name="radio" value="male">
+                          <span class="radio-control"></span>
                           Male
                         </label>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -72,28 +60,28 @@
                 <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.svg' %}#chevron-down"/></svg>
               </summary>
               <div class="folding-content">
-                <div class="row">
+                <div class="form-row">
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="email">e-mail</label>
-                    <input id="email" type="email" name="email" placeholder="e-mail">
+                    <input id="email" type="email" name="email" class="form-control" placeholder="e-mail">
                   </div>
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="address">Address</label>
-                    <input id="address" type="text" name="address" placeholder="Address">
+                    <input id="address" type="text" name="address" class="form-control" placeholder="Address">
                   </div>
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="cellphone">Cellphone number</label>
-                    <input id="cellphone" type="tel" name="cellphone" placeholder="Cellphone numeber">
+                    <input id="cellphone" type="tel" name="cellphone" class="form-control" placeholder="Cellphone numeber">
                   </div>
                 </div>
-                <div class="row">
+                <div class="form-row">
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="phone">Phone number</label>
-                    <input id="phone" type="tel" name="phone" placeholder="Phone number">
+                    <input id="phone" type="tel" name="phone" class="form-control" placeholder="Phone number">
                   </div>
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="enrrolment">Enrrolment</label>
-                    <input id="enrrolment" type="text" name="enrollment" placeholder="Enrrolment">
+                    <input id="enrrolment" type="text" name="enrollment"  class="form-control" placeholder="Enrrolment">
                   </div>
                 </div>
               </div>
@@ -105,10 +93,10 @@
                 <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.svg' %}#chevron-down"/></svg>
               </summary>
               <div class="folding-content">
-                <div class="row">
+                <div class="form-row">
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="rol">Rol</label>
-                    <div class="container-select">
+                    <div class="form-control">
                       <select class="select" id="rol">
                         <option value="admin">Administrative</option>
                         <option value="teachers">Teachers</option>
@@ -121,7 +109,7 @@
                   </div>
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="career">Carrer</label>
-                    <div class="container-select">
+                    <div class="form-control">
                       <select class="select" id="career">
                         <option value="career_1">Career 1</option>
                         <option value="career_2">Career 2</option>
@@ -134,7 +122,7 @@
                   </div>
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="semester">Semester</label>
-                    <div class="container-select">
+                    <div class="form-control">
                       <select class="select" name="semester">
                         <option value="first">1st Semester</option>
                         <option value="second">2nd Semester</option>
@@ -154,10 +142,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                <div class="form-row">
                   <div class="col-12 col-md-6 col-lg-4">
                     <label for="shift">Shift</label>
-                    <div class="container-select">
+                    <div class="form-control">
                       <select class="select" name="shift">
                         <option value="morning">Morning shift</option>
                         <option value="afternoon">Afternoon shift</option>
@@ -171,9 +159,9 @@
               </div>
             </details>
           </div>
-          <div class="row">
+          <div class="form-row">
             <div class="col">
-              <button class="btn" name="send">Add User</button>
+              <button class="btn" name="send">Save</button>
             </div>
           </div>
 
