@@ -1,0 +1,39 @@
+.login {
+  height: 100vh;
+  background-image: url('../img/login-bg.jpeg');
+  background-color: rgba(0, 98, 255, 0.35);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+
+  .hero {
+    color: #fff;
+    padding: 0 8vw;
+
+    h1 {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  .container-fluid {
+    height: 100vh;
+
+    .row {
+      height: 100%;
+      align-items: center;
+    }
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: -1px;
+  font-size: 30px;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+}

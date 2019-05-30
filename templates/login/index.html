@@ -2,25 +2,40 @@
 
 {% block title %} Login {% endblock %}
 
-{% block content %}
+{% load static %}
 
-<div class="container-fuid">
-  <div class="row" style="justify-content:center;align-items:center;">
-    <div class="col-sm-6">
-      <h5 class="text-center">campus</h5>
-    </div>
-    <div class="col-sm-6">
-      <form class="form">
-        <div class="card-body">
-          <label for="username">Username</label>
-          <input class="form-control" type="text" placeholder="Username" name="username">
-          <label for="password">Password</label>
-          <input class="form-control" type="password" placeholder="Password" name="password">
+{% block content %}
+<div class="login">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 hero">
+        <div class="logo">campus</div>
+        <h1>Intelligent management for education</h1>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <form class="form">
+            <div class="card-header">
+              <div class="card-title">
+                <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#log-in"/></svg> Login
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input class="form-control" type="text" placeholder="Username" name="username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" placeholder="Password" name="password">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-medium">Login</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="card-footer">
-          <button type="submit" class="btn btn-medium">Login</button>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
 </div>
