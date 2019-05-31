@@ -1,32 +1,54 @@
 {% extends 'layouts/tch_page.html' %}
 {% load static %}
 
-{% block title %} Home {% endblock %}
+{% block title %} Dashboard {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <h1>Campus</h1>
-  </div>
-
   <div class="row">
     <div class="col-md-4">
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#trending-up"/></svg>
-            Grades
+            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#edit"/></svg>
+            Courses
           </div>
         </div>
         <div class="card-body">
           <p>
-            Students grades, sorted in global and by career.
+            Current number of courses, sorter by carrer, each one with worload
           </p>
         </div>
         <div class="card-footer">
         </div>
       </div>
     </div>
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#mail"/></svg>
+            Notices
+          </div>
+        </div>
+        <div class="card-body">
 
+          <h4><b>Extraordinary evaluations - Second chance</b><br>
+          <small><b>To All Careers</b> - Friday, 20th May, 2019</small></h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
+            Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
+            Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a class="btn" href="#">Go to Notices</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="col-md-4">
       <div class="card">
         <div class="card-header">
@@ -49,27 +71,6 @@
         </div>
       </div>
     </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#edit"/></svg>
-            Courses
-          </div>
-        </div>
-        <div class="card-body">
-          <p>
-            Current number of courses, sorter by carrer, each one with worload
-          </p>
-        </div>
-        <div class="card-footer">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
