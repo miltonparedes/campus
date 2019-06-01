@@ -1,5 +1,32 @@
 .nav-header .brand.logo,
 .logo {
-  font-weight: 800;
-  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.content {
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+}
+
+.status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #24a148;
+  display: block;
+
+  &.status-pending {
+    background: #0062ff;
+  }
+
+  &.status-off {
+    background: #da1e28;
+  }
+}
+
+.table th.padding-null,
+.table td.padding-null {
+  padding-right: 5px;
+  padding-left: 5px;
 }
