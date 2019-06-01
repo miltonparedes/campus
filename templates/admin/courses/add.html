@@ -1,8 +1,89 @@
 {% extends 'layouts/adm_page.html' %}
 {% load static %}
 
-{% block title %} Courses {% endblock %}
+{% block title %} Add Courses {% endblock %}
 
 {% block content %}
- <h1>Add subject</h1>
+<div class="row">
+  <div class="col-12 col-lg-8">
+    <form class="form" action="" method="post">
+      <div class="card">
+        <div class="card-body">
+          <div class="form-row">
+            <div class="col-12 col-md-12 col-lg-12">
+              <label for="course-name">Course name</label>
+              <input id="course-name" type="text" class="form-control" name="course-name" placeholder="Name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="semester">Grade</label>
+              <div id="semester" class="form-control">
+                <select class="select" name="">
+                  <option value="first">1st Semester</option>
+                  <option value="second">2nd Semester</option>
+                  <option value="third">3rd Semester</option>
+                  <option value="fourth">4th Semester</option>
+                  <option value="fifh">5th Semester</option>
+                  <option value="sixth">6th Semester</option>
+                  <option value="seventh">7th Semester</option>
+                  <option value="eighth">8th Semester</option>
+                  <option value="nineth">9th Semester</option>
+                </select>
+                <svg class="icon">
+                  <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                </svg>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="category">Category</label>
+              <div id="category" class="form-control">
+                <select class="select">
+                  <option value="category_1">Category 1</option>
+                  <option value="category_2">Category 2</option>
+                  <option value="category_3">Category 3</option>
+                </select>
+                <svg class="icon">
+                  <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="attendant">Teacher</label>
+              <div id="smester" class="form-control">
+                <select class="select" name="course-attendant">
+                  <option value="">Teacher 1</option>
+                  <option value="">teacher 2</option>
+                </select>
+                <svg class="icon">
+                  <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                </svg>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="workl">Weekly workload</label>
+              <input id="workl" type="number" class="form-control" name="workload" placeholder="Workload">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-12 col-lg-12">
+              <label for="description">Course description</label>
+              <textarea id="description" class="form-control" name="name" rows="8" cols="80" placeholder="Description"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="form-row">
+            <button type="submit" class="btn" name="search">Add</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
 {% endblock %}
