@@ -5,67 +5,85 @@
 
 {% block content %}
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-7 col-lg-8">
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#users"/></svg>
-            Users
+            Courses Today
           </div>
         </div>
         <div class="card-body">
-            <ul>
-              <li>Online users</li>
-            </ul>
-            Global users
-            <ul>
-              <li>Admin</li>
-              <li>Teachers</li>
-              <li>Students (global and by career)</li>
-            </ul>
-        </div>
-        <div class="card-footer">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#edit"/></svg>
-            Active Courses
-          </div>
-        </div>
-        <div class="card-body">
-            <ul>
-              <li>Course 1</li>
-              <li>Course 2</li>
-              <li>Course 3</li>
-              <li>Course 4</li>
-            </ul>
-        </div>
-        <div class="card-footer">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="padding-null"></th>
+                <th>Course</th>
+                <th>Career | Grade</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="padding-null"><span class="status status-pending"></span></td>
+                <td>Differential calculus</td>
+                <td>Computer Science<br>4th semester</td>
+                <td>10:30 AM</td>
+              </tr>
+              <tr>
+                <td class="padding-null"><span class="status"></span></td>
+                <td>Numerical methods</td>
+                <td>Computer Science<br>6th semester</td>
+                <td>09:00 AM</td>
+              </tr>
+              <tr>
+                <td class="padding-null"><span class="status status-off"></span></td>
+                <td>Algebra I</td>
+                <td>Computer Science<br>1th semester</td>
+                <td>07:00 AM</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-5 col-lg-4">
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#message-circle"/></svg>
             Notices
           </div>
         </div>
         <div class="card-body">
-          <p>
-            last announcement
-          </p>
-        </div>
-        <div class="card-footer">
+          <div class="avatar-box">
+            <div class="avatar-box-content">
+              <div class="avatar-box-content-primary">
+                Extraordinary evaluations
+              </div>
+              <div class="avatar-box-content-secondary">
+                Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
+              </div>
+            </div>
+          </div>
+          <div class="avatar-box">
+            <div class="avatar-box-content">
+              <div class="avatar-box-content-primary">
+                Extraordinary evaluations
+              </div>
+              <div class="avatar-box-content-secondary">
+                Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
+              </div>
+            </div>
+          </div>
+          <div class="avatar-box">
+            <div class="avatar-box-content">
+              <div class="avatar-box-content-primary">
+                Extraordinary evaluations
+              </div>
+              <div class="avatar-box-content-secondary">
+                Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

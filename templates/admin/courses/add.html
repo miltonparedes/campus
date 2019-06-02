@@ -10,9 +10,21 @@
       <div class="card">
         <div class="card-body">
           <div class="form-row">
-            <div class="col-12 col-md-12 col-lg-12">
+            <div class="col-12 col-md-6 col-lg-6">
               <label for="course-name">Course name</label>
               <input id="course-name" type="text" class="form-control" name="course-name" placeholder="Name">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <label for="attendant">Teacher</label>
+              <div id="smester" class="form-control">
+                <select class="select" name="course-attendant">
+                  <option value="">Teacher 1</option>
+                  <option value="">teacher 2</option>
+                </select>
+                <svg class="icon">
+                  <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                </svg>
+              </div>
             </div>
           </div>
 
@@ -53,11 +65,11 @@
 
           <div class="form-row">
             <div class="col-12 col-md-6 col-lg-6">
-              <label for="attendant">Teacher</label>
+              <label for="attendant">Classroom</label>
               <div id="smester" class="form-control">
                 <select class="select" name="course-attendant">
-                  <option value="">Teacher 1</option>
-                  <option value="">teacher 2</option>
+                  <option value="">Classroom 1</option>
+                  <option value="">Classroom 2</option>
                 </select>
                 <svg class="icon">
                   <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>

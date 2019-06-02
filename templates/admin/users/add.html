@@ -7,8 +7,8 @@
 <div class="row">
   <div class="col-12 col-lg-9">
     <div class="card">
-      <div class="card-body">
-        <form class="form" action="" method="post">
+      <form class="form" action="" method="post">
+        <div class="card-body">
           <div class="folding-group">
             <details class="folding" open>
               <summary class="folding-title">
@@ -108,12 +108,12 @@
                     </div>
                   </div>
                   <div class="col-12 col-md-6 col-lg-4">
-                    <label for="career">Carrer</label>
+                    <label for="category">Category</label>
                     <div class="form-control">
-                      <select class="select" id="career">
-                        <option value="career_1">Career 1</option>
-                        <option value="career_2">Career 2</option>
-                        <option value="career_3">Career 3</option>
+                      <select class="select" id="category">
+                        <option value="category_1">Category 1</option>
+                        <option value="category_2">Category 2</option>
+                        <option value="category_3">Category 3</option>
                       </select>
                       <svg class="icon">
                         <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
@@ -159,14 +159,13 @@
               </div>
             </details>
           </div>
-          <div class="form-row">
-            <div class="col">
-              <button class="btn" name="send">Add User</button>
+          <div class="card-footer">
+            <div class="form-row">
+                <button class="btn" name="send">Add User</button>
             </div>
           </div>
-
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>
