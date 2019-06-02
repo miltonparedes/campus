@@ -25,3 +25,33 @@ def delete(request):
     template = loader.get_template('admin/courses/delete.html')
     context = {"courses_page_delete": "activate"}
     return HttpResponse(template.render(context))
+
+def classroom(request):
+    template = loader.get_template('admin/course/classroom.html')
+    context = {"classroom_page_classroom": "active"}
+    return HttpResponse(template.render(context))
+
+def add_classroom(request):
+    templalte = loader.get_tempalte('admin/courses/add_classroom.html')
+    context = {"couses_page_add_classroom": "activate"}
+    return HttpResponse(template.render(context))
+
+def edit_classroom(request):
+    template = loader.get_template('admin/courses/edit_classroom.html')
+    context = {"courses_page_edit_classroom": "activate"}
+    return HttpResponse(template.render(context))
+
+def category(request):
+    template = loader.get_template('admin/courses/category.html')
+    context = {"courses_page_category": "activate"}
+    return HttpResponse(template.render(context))
+
+def add_category(request):
+    template = loader.get_template('admin/courses/add_category.html')
+    context = {"courses_page_add_category"}
+    return HttpResponse(template.render(contex))
+
+def edit_category(request):
+    template = loader.get_template('admin/course/edit_category.html')
+    context = {"couses_page_edit_category"}
+    return HttpResponse(template.render(context))
