@@ -9,7 +9,7 @@
     <div class="col-12 col-lg-8">
       <div class="nav-tabs">
         <input name="tabs" type="radio" id="tab-1" class="radio-tabs" checked="checked">
-          <label for="tab-1" class="tab-label">Basic Info</label>
+          <label for="tab-1" class="tab-label">1) Basic Info</label>
           <div class="tab-panel">
             <div class="card">
               <div class="card-body">
@@ -93,16 +93,12 @@
                   </div>
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="form-row">
-                  <button type="submit" class="btn" name="search">Add</button>
-                </div>
-              </div>
+
             </div>
           </div>
 
           <input name="tabs" type="radio" id="tab-2" class="radio-tabs">
-           <label for="tab-2" class="tab-label">Schedule</label>
+           <label for="tab-2" class="tab-label">2) Schedule</label>
            <div class="tab-panel">
             <div class="card">
               <div class="card-body">
@@ -141,6 +137,49 @@
                         <input class="form-control" id="end" type="time" name="tuesday_end"placeholder="end">
                       </div>
                     </div>
+
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                        <label for="name">Wednesday</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <input class="form-control" id="begin" type="time" name="wednesday_begin"placeholder="begin">
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-4">
+                        <input class="form-control" id="end" type="time" name="wednesday_end"placeholder="end">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                        <label for="name">Thursday</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <input class="form-control" id="begin" type="time" name="thursday_begin"placeholder="begin">
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-4">
+                        <input class="form-control" id="end" type="time" name="thursday_end"placeholder="end">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                        <label for="name">Friday</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <input class="form-control" id="begin" type="time" name="friday_begin"placeholder="begin">
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-4">
+                        <input class="form-control" id="end" type="time" name="friday_end"placeholder="end">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="form-row">
+                  <div class="col-12">
+                    <button type="submit" class="btn" name="add">Add</button>                  
                   </div>
                 </div>
               </div>
@@ -156,7 +195,8 @@
             Aditional options
           </div>
           <div class="card-body">
-            <label for="category"></label>
+            <button type="button" class="btn"><a href="/admin/courses/add_category">New category</a></button>
+            <button type="button" class="btn"><a href="/admin/courses/add_classroom">New classroom</a></button>
           </div>
         </div>
       </div>

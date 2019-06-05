@@ -32,7 +32,7 @@ def classroom(request):
     return HttpResponse(template.render(context))
 
 def add_classroom(request):
-    templalte = loader.get_tempalte('admin/courses/add_classroom.html')
+    template = loader.get_template('admin/courses/add_classroom.html')
     context = {"couses_page_add_classroom": "active"}
     return HttpResponse(template.render(context))
 
