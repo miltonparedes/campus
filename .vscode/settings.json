@@ -1,3 +1,21 @@
 {
-  "python.pythonPath": "venv/bin/python3"
+  "python.pythonPath": "venv/bin/python3",
+  "files.exclude": {
+    "**/*.pyc": true,
+    "**/*.min.js": true,
+    "**/*.js.map": true,
+    "static/css/": true,
+    "node_modules": true,
+    "htmlcov": true,
+    "build": true,
+    "*.log": true,
+    "*.egg-info": true
+  },
+  "search.followSymlinks": false,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.html": "django-html"
+  }
 }
