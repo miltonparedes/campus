@@ -5,84 +5,59 @@
 
 {% block content %}
   <div class="row">
-    <div class="col-md-7 col-lg-8">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            Courses Today
+    <div class="col-12 col-lg-4">
+      <div class="form">
+        <div class="card">
+          <div class="card-header">
+            Users
           </div>
-        </div>
-        <div class="card-body">
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="padding-null"></th>
-                <th>Course</th>
-                <th>Career | Grade</th>
-                <th>Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="padding-null"><span class="status status-pending"></span></td>
-                <td>Differential calculus</td>
-                <td>Computer Science<br>4th semester</td>
-                <td>10:30 AM</td>
-              </tr>
-              <tr>
-                <td class="padding-null"><span class="status"></span></td>
-                <td>Numerical methods</td>
-                <td>Computer Science<br>6th semester</td>
-                <td>09:00 AM</td>
-              </tr>
-              <tr>
-                <td class="padding-null"><span class="status status-off"></span></td>
-                <td>Algebra I</td>
-                <td>Computer Science<br>1th semester</td>
-                <td>07:00 AM</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="col-9">
+                <label for="online">Online users</label>
+              </div>
+              <div class="col-3">
+                <input id ="online" type="text" class="form-control" name="online-users" placeholder="15" readonly>
+              </div>
+            </div>
+            <label for="user-satats">User totals</label>
+            <div id="user-stats" class="form-row">
+              <div class="col-9">
+                <label for="C1-users">Category 1 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C1-users"type="text" class="form-control" name="C1-users" placeholder="13" readonly>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-9">
+                <label for="C2-users">Category 2 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C2-users" type="text" class="form-control" name="C2-users" placeholder="75" readonly>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-9">
+                <label for="C3-users">Category 3 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C3-useres" type="text" class="form-control" name="C3-users" placeholder="20" readonly>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-5 col-lg-4">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            Notices
+
+    <div class="col-12 col-lg-4">
+      <div class="form">
+        <div class="card">
+          <div class="card-header">
+            Overall Grades
           </div>
-        </div>
-        <div class="card-body">
-          <div class="avatar-box">
-            <div class="avatar-box-content">
-              <div class="avatar-box-content-primary">
-                Extraordinary evaluations
-              </div>
-              <div class="avatar-box-content-secondary">
-                Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
-              </div>
-            </div>
-          </div>
-          <div class="avatar-box">
-            <div class="avatar-box-content">
-              <div class="avatar-box-content-primary">
-                Extraordinary evaluations
-              </div>
-              <div class="avatar-box-content-secondary">
-                Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
-              </div>
-            </div>
-          </div>
-          <div class="avatar-box">
-            <div class="avatar-box-content">
-              <div class="avatar-box-content-primary">
-                Extraordinary evaluations
-              </div>
-              <div class="avatar-box-content-secondary">
-                Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
-              </div>
-            </div>
+          <div class="card-body">
+            
           </div>
         </div>
       </div>
