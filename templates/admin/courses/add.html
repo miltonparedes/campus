@@ -80,10 +80,6 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6">
-                    <label for="workl">Weekly workload</label>
-                    <input id="workl" type="number" class="form-control" name="workload" placeholder="Workload">
-                  </div>
                 </div>
 
                 <div class="form-row">
@@ -102,7 +98,7 @@
            <div class="tab-panel">
             <div class="card">
               <div class="card-body">
-                <p>Course hours must be provided in 24 hours format</p>
+                <p>The schedules hour uses the 12 hour format. Don't forget to add the "AM / PM" designation</p>
                 <div class="form-row">
                   <div class="col-12 col-md-12 col-lg-10">
                     <div class="form-row">
@@ -196,8 +192,12 @@
             Aditional options
           </div>
           <div class="card-body">
-            <button type="button" class="btn"><a href="/admin/courses/add_category">New category</a></button>
-            <button type="button" class="btn"><a href="/admin/courses/add_classroom">New classroom</a></button>
+            <div class="form-row">
+              <div class="col-12">
+                <a class="nav-link" href="/admin/courses/add_category"><button type="button" class="btn"> New category</button></a>
+                <a class="nav-link" href="/admin/courses/add_classroom"><button type="button" class="btn"> New classroom</button></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
