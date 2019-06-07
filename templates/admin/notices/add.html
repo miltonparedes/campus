@@ -4,16 +4,38 @@
 {% block title %} Notices {% endblock %}
 
 {% block content %}
- <div class="">
-  <h1>Add Announcement</h1>
- </div>
- <div class="">
-  <form class="" action="index.html" method="post">
-   <input type="text" name="ann_title" value="" placeholder="Affair (title)"><br>
-   <input type="text" name="" value="" placeholder="Addressee"><br>
-   <textarea name="name" rows="30" cols="100"></textarea><br>
-   <input type="submit" name="" value="Send">
-  </form>
- </div>
+<div class="row">
+  <div class="col-8">
+    <div class="card">
+      <form class="form" action="index.html" method="post">
+        <div class="card-body">
+            <div class="form-row">
+              <div class="col-12 col-md-3 col-lg-3 col-xl-3">
+                <label for="affair">Affair</label>
+                <input id="affair" type="text" class="form-control" name="affair" placeholder="Affair">
+              </div>
+              <div class="col-12 col-md-3 col-3 col-xl-3">
+                <label for="destinatary">Destinatary</label>
+                <input id="destinatary" type="text" class="form-control" name="destinatary" placeholder="Destinatary">
+              </div>
+              <div class="form-row">
+                <div class="col-12">
+                  <label for="content">Notice content</label>
+                  <textarea id="content" name="content"  class="form-control" rows="8" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="form-row">
+              <div class="col-2">
+                <button type="submit" class="btn" name="publish">Publish</button>
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
