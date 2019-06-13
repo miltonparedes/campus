@@ -4,106 +4,248 @@
 {% block title %} Home {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <h1>Campus</h1>
+<div class="row">
+  <div class="col-md-7">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          Assists
+        </div>
+      </div>
+      <div class="card-body card-scrollable">
+        <div class="row">
+          <div class="col-12">
+            <form class="form" action="index.html" method="post">
+              <table class="table table-small">
+                <thead>
+                  <tr>
+                    <td><b></b> <small>6th semester</small></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Algebra</td>
+                    <td>
+                      <div class="form-group">
+                        <label for="student-0" class="form-input-checkbox">
+                          <input class="form-control" id="student-0" type="checkbox">
+                          <span class="checkbox-control"></span> Assistance
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <label for="student-1" class="form-input-checkbox">
+                        <input class="form-control" id="student-1" type="checkbox">
+                        <span class="checkbox-control"></span> Delay in class
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Español</td>
+                    <td>
+                      <div class="form-group">
+                        <label for="student-0" class="form-input-checkbox">
+                          <input class="form-control" id="student-0" type="checkbox">
+                          <span class="checkbox-control"></span> Assistance
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <label for="student-1" class="form-input-checkbox">
+                        <input class="form-control" id="student-1" type="checkbox">
+                        <span class="checkbox-control"></span> Delay in class
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Quimica</td>
+                    <td>
+                      <div class="form-group">
+                        <label for="student-0" class="form-input-checkbox">
+                          <input class="form-control" id="student-0" type="checkbox">
+                          <span class="checkbox-control"></span> Assistance
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <label for="student-1" class="form-input-checkbox">
+                        <input class="form-control" id="student-1" type="checkbox">
+                        <span class="checkbox-control"></span> Delay in class
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Fisica</td>
+                    <td>
+                      <div class="form-group">
+                        <label for="student-2" class="form-input-checkbox">
+                          <input class="form-control" id="student-2" type="checkbox">
+                          <span class="checkbox-control"></span> Assistance
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <label for="student-3" class="form-input-checkbox">
+                        <input class="form-control" id="student-3" type="checkbox">
+                        <span class="checkbox-control"></span> Delay in class
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Artes</td>
+                    <td>
+                      <div class="form-group">
+
+
+                        <label for="student-2" class="form-input-checkbox">
+                          <input class="form-control" id="student-2" type="checkbox">
+                          <span class="checkbox-control"></span> Assistance
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <label for="student-3" class="form-input-checkbox">
+                        <input class="form-control" id="student-3" type="checkbox">
+                        <span class="checkbox-control"></span> Delay in class
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>test</td>
+                    <td>
+                      <div class="form-group">
+                        <label for="student-2" class="form-input-checkbox">
+                          <input class="form-control" id="student-2" type="checkbox">
+                          <span class="checkbox-control"></span> Assistance
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <label for="student-3" class="form-input-checkbox">
+                        <input class="form-control" id="student-3" type="checkbox">
+                        <span class="checkbox-control"></span> Delay in class
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>test </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="student-4" class="form-input-checkbox">
+                          <input class="form-control" id="student-4" type="checkbox">
+                          <span class="checkbox-control"></span> Assistance
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <label for="student-" class="form-input-checkbox">
+                        <input class="form-control" id="student-" type="checkbox">
+                        <span class="checkbox-control"></span> Delay in class
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#trending-up"/></svg>
-            Grades
-          </div>
-        </div>
-        <div class="card-body">
-          <p>
-            Students grades, sorted in global and by career.
-          </p>
-        </div>
-        <div class="card-footer">
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          Notices
         </div>
       </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#users"/></svg>
-            Users
+      <div class="card-body card-scrollable">
+        <div class="avatar-box">
+          <div class="avatar-box-content">
+            <div class="avatar-box-content-primary">
+              Extraordinary evaluations <small>· 2 hours ago</small>
+            </div>
+            <div class="avatar-box-content-secondary">
+              Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
+            </div>
           </div>
         </div>
-        <div class="card-body">
-          <p>
-            Number of current users displayed as a list.
-            <ul>
-              <li>Admin</li>
-              <li>Teachers</li>
-              <li>Students (global and by career)</li>
-            </ul>
-          </p>
-        </div>
-        <div class="card-footer">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#edit"/></svg>
-            Courses
+        <div class="avatar-box">
+          <div class="avatar-box-content">
+            <div class="avatar-box-content-primary">
+              Ordinary evaluations <small>· 6th May, 2019</small>
+            </div>
+            <div class="avatar-box-content-secondary">
+              Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
+            </div>
           </div>
         </div>
-        <div class="card-body">
-          <p>
-            Current number of courses, sorter by carrer, each one with worload
-          </p>
+        <div class="avatar-box">
+          <div class="avatar-box-content">
+            <div class="avatar-box-content-primary">
+              Extraordinary evaluations <small>· 3rd May, 2019</small>
+            </div>
+            <div class="avatar-box-content-secondary">
+              Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
+            </div>
+          </div>
         </div>
-        <div class="card-footer">
+        <div class="avatar-box">
+          <div class="avatar-box-content">
+
+<div class="avatar-box-content-primary">
+              Extraordinary evaluations <small>· 3rd May, 2019</small>
+            </div>
+            <div class="avatar-box-content-secondary">
+              Full Stack Developer. @rtCamp ... mega Speaker, Blogger, YouTuber, Writer computer Wordpress, React, Node, Laravel Developer
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#message-circle"/></svg>
-            Notices
-          </div>
-        </div>
-        <div class="card-body">
-          <p>
-            last announcement
-          </p>
-        </div>
-        <div class="card-footer">
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          Courses Today
         </div>
       </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#list"/></svg>
-            Other
-          </div>
-        </div>
-        <div class="card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="card-footer">
-        </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Course</th>
+              <th>Career | Grade</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="status status-pending"></span></td>
+              <td>Differential calculus</td>
+              <td>Computer Science<br><small>4th semester</small></td>
+              <td>10:30 <small>AM</small></td>
+            </tr>
+            <tr>
+              <td><span class="status"></span></td>
+              <td>Numerical methods</td>
+              <td>Computer Science<br><small>6th semester</small></td>
+              <td>09:00 <small>AM</small></td>
+            </tr>
+            <tr>
+              <td><span class="status status-off"></span></td>
+              <td>Algebra I</td>
+              <td>Computer Science<br><small>1th semester</small></td>
+              <td>07:00 <small>AM</small></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
+</div>
 {% endblock %}
