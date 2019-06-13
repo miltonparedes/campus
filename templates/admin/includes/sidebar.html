@@ -16,47 +16,70 @@
     <ul class="navbar-nav folding-menu">
       <li class="nav-item">
         <a href="/admin/dashboard" class="nav-link">
-          <svg class="icon">
+          <svg class="icon icon-left">
             <use xlink:href="{% static 'feather.svg' %}#compass"/>
           </svg>
           Dashboard
         </a>
       </li>
+
       <li class="nav-item">
-        <a href="/admin/users" class="nav-link">
-          <svg class="icon">
-            <use xlink:href="{% static 'feather.svg' %}#users"/>
-          </svg>
-          Users
-        </a>
+        <details class="folding folding-borderless">
+          <summary class="nav-link folding-title">
+            <svg class="icon">
+              <use xlink:href="{% static 'feather.svg' %}#users"></use>
+            </svg>
+            Users
+            <svg class="icon icon-right icon-rotate">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"></use>
+            </svg>
+          </summary>
+          <div class="folding-content">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="/admin/users" class="nav-link">Overview</a></li>
+              <li class="nav-item"><a href="/admin/users/add" class="nav-link">Add user</a></li>
+            </ul>
+          </div>
+        </details>
       </li>
 
       <li class="nav-item">
-        <a href="/admin/courses" class="nav-link">
-          <svg class="icon">
-            <use xlink:href="{% static 'feather.svg' %}#edit"/>
-          </svg>
-          Courses
-        </a>
+        <details class="folding folding-borderless">
+          <summary class="nav-link folding-title">
+            <svg class="icon">
+              <use xlink:href="{% static 'feather.svg' %}#edit"></use>
+            </svg>
+            Courses
+            <svg class="icon icon-right icon-rotate">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"></use>
+            </svg>
+          </summary>
+          <div class="folding-content">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="/admin/courses" class="nav-link">Overview</a></li>
+              <li class="nav-item"><a href="/admin/courses/add" class="nav-link">Add courses</a></li>
+            </ul>
+          </div>
+        </details>
       </li>
 
-      <li class="nav-item">
-        <a href="/admin/schedules" class="nav-link">
-          <svg class="icon">
-            <use xlink:href="{% static 'feather.svg' %}#calendar"/>
-          </svg>
-          Schedules
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a href="/admin/notices" class="nav-link">
+      <details class="folding folding-borderless">
+        <summary class="nav-link folding-title">
           <svg class="icon">
             <use xlink:href="{% static 'feather.svg' %}#mail"/>
           </svg>
           Notices
-        </a>
-      </li>
+          <svg class="icon icon-right icon-rotate">
+            <use xlink:href="{% static 'feather.svg' %}#chevron-down"></use>
+          </svg>
+        </summary>
+        <div class="folding-content">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="/admin/notices" class="nav-link">Overview</a></li>
+            <li class="nav-item"><a href="/admin/notices/add" class="nav-link">Add notice</a></li>
+          </ul>
+        </div>
+      </details>
 
       <details class="folding folding-borderless">
         <summary class="nav-link folding-title">

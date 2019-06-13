@@ -5,103 +5,60 @@
 
 {% block content %}
   <div class="row">
-    <h1>Campus</h1>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#trending-up"/></svg>
-            Grades
-          </div>
-        </div>
-        <div class="card-body">
-          <p>
-            Students grades, sorted in global and by career.
-          </p>
-        </div>
-        <div class="card-footer">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#users"/></svg>
+    <div class="col-12 col-lg-4">
+      <div class="form">
+        <div class="card">
+          <div class="card-header">
             Users
           </div>
-        </div>
-        <div class="card-body">
-          <p>
-            Number of current users displayed as a list.
-            <ul>
-              <li>Admin</li>
-              <li>Teachers</li>
-              <li>Students (global and by career)</li>
-            </ul>
-          </p>
-        </div>
-        <div class="card-footer">
+          <div class="card-body">
+            <div class="form-row">
+              <div class="col-9">
+                <label for="online">Online users</label>
+              </div>
+              <div class="col-3">
+                <input id ="online" type="text" class="form-control" name="online-users" placeholder="15" readonly>
+              </div>
+            </div>
+            <label for="user-satats">User totals</label>
+            <div id="user-stats" class="form-row">
+              <div class="col-9">
+                <label for="C1-users">Category 1 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C1-users"type="text" class="form-control" name="C1-users" placeholder="13" readonly>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-9">
+                <label for="C2-users">Category 2 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C2-users" type="text" class="form-control" name="C2-users" placeholder="75" readonly>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-9">
+                <label for="C3-users">Category 3 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C3-useres" type="text" class="form-control" name="C3-users" placeholder="20" readonly>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#edit"/></svg>
-            Courses
+    <div class="col-12 col-lg-4">
+      <div class="form">
+        <div class="card">
+          <div class="card-header">
+            Overall Grades
           </div>
-        </div>
-        <div class="card-body">
-          <p>
-            Current number of courses, sorter by carrer, each one with worload
-          </p>
-        </div>
-        <div class="card-footer">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#message-circle"/></svg>
-            Notices
+          <div class="card-body">
+            
           </div>
-        </div>
-        <div class="card-body">
-          <p>
-            last announcement
-          </p>
-        </div>
-        <div class="card-footer">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <svg class="icon icon-big"><use xlink:href="{% static 'feather.svg' %}#list"/></svg>
-            Other
-          </div>
-        </div>
-        <div class="card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="card-footer">
         </div>
       </div>
     </div>

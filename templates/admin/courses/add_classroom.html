@@ -1,7 +1,7 @@
 {% extends 'layouts/adm_page.html' %}
 {% load static %}
 
-{% block title %} Courses {% endblock %}
+{% block title %} Courses Add Classroom {% endblock %}
 
 {% block content %}
 <div class="row">
@@ -10,18 +10,24 @@
       <div class="card-body">
         <form class="form" action="" method="post">
           <div class="form-row">
-            <div class="col-12 col-lg-4">
-              <input type="text" class="form-control" placeholder="Specific search" name="" value="">
-            </div>
             <div class="col-12 col-lg-2">
-              <button class="btn" name="send">Search</button>
+              <label for="classroom"">Classroom name</label>
+              <input id="classroom" type="text" class="form-control" name="classroom" placeholder="classroom">
             </div>
           </div>
         </form>
       </div>
+      <div class="card-footer">
+        <div class="form-row">
+          <div class="col-12">
+            <button type="submit" class="btn" name="Add">Add</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-12">
     <div class="card">
@@ -30,20 +36,12 @@
           <thead>
             <tr>
               <th>N°</th>
-              <th>Course</th>
-              <th>Category</th>
-              <th>Semester</th>
-              <th>Teacher</th>
-              <th>Students</th>
+              <th>Classroom</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
               <td></td>
               <td></td>
               <td>
@@ -54,7 +52,7 @@
                     </svg>
                   </summary>
                   <ul class="dropdown-content">
-                    <li><a class="dropdown-item" href="/admin/courses/edit">Edit</a></li>
+                    <li><a class="dropdown-item" href="/admin/courses/edit_classroom">Edit</a></li>
                     <li><a class="dropdown-item" href="#">Delete</a></li>
                   </ul>
                 </details>
