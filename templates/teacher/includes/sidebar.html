@@ -14,7 +14,7 @@
   </label>
   <nav class="navbar-menu">
     <ul class="navbar-nav folding-menu">
-      <li class="nav-item">
+      <li class="nav-item {{ dashboard_page }}" >
         <a href="/teacher/dashboard" class="nav-link">
           <svg class="icon icon-left">
             <use xlink:href="{% static 'feather.svg' %}#compass"/>
@@ -23,7 +23,7 @@
         </a>
       </li>
 
-      <details class="folding folding-borderless">
+      <details class="folding folding-borderless" {{ courses_page }}>
         <summary class="nav-link folding-title">
           <svg class="icon icon-left">
             <use xlink:href="{% static 'feather.svg' %}#edit"></use>
@@ -41,7 +41,7 @@
         </div>
       </details>
 
-      <li class="nav-item">
+      <li class="nav-item {{ schedules_page }}">
         <a href="/teacher/schedules" class="nav-link">
           <svg class="icon icon-left">
             <use xlink:href="{% static 'feather.svg' %}#calendar"/>
