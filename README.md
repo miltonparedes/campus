@@ -1,4 +1,5 @@
-# Campus
+<h1 align="center">hyphev campus</h1>
+<p align="center">Intelligent management for education</p>
 
 
 
@@ -35,6 +36,20 @@ python manage.py runserver
 ```
 
 ##  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
