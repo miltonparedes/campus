@@ -23,23 +23,25 @@
         </a>
       </li>
 
-      <details class="folding folding-borderless" {{ courses_page }}>
-        <summary class="nav-link folding-title">
-          <svg class="icon icon-left">
-            <use xlink:href="{% static 'feather.svg' %}#edit"></use>
-          </svg>
-          Courses
-          <svg class="icon icon-right icon-rotate">
-            <use xlink:href="{% static 'feather.svg' %}#chevron-down"></use>
-          </svg>
-        </summary>
-        <div class="folding-content">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Overview</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Assistance</a></li>
-          </ul>
-        </div>
-      </details>
+      <li class="nav-item">
+        <details class="folding folding-borderless" {{ courses_page }}>
+          <summary class="nav-link folding-title">
+            <svg class="icon icon-left">
+              <use xlink:href="{% static 'feather.svg' %}#edit"></use>
+            </svg>
+            Courses
+            <svg class="icon icon-right icon-rotate">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"></use>
+            </svg>
+          </summary>
+          <div class="folding-content">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#" class="nav-link">Overview</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Assistance</a></li>
+            </ul>
+          </div>
+        </details>
+      </li>
 
       <li class="nav-item {{ schedules_page }}">
         <a href="/teacher/schedules" class="nav-link">
@@ -50,23 +52,25 @@
         </a>
       </li>
 
-      <details class="folding folding-borderless">
-        <summary class="nav-link folding-title">
-          <svg class="icon icon-left">
-            <use xlink:href="{% static 'feather.svg' %}#settings"></use>
-          </svg>
-          Settings
-          <svg class="icon icon-right icon-rotate">
-            <use xlink:href="{% static 'feather.svg' %}#chevron-down"></use>
-          </svg>
-        </summary>
-        <div class="folding-content">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">General</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Appearance</a></li>
-          </ul>
-        </div>
-      </details>
+      <li class="nav-item">
+        <details class="folding folding-borderless">
+          <summary class="nav-link folding-title">
+            <svg class="icon icon-left">
+              <use xlink:href="{% static 'feather.svg' %}#settings"></use>
+            </svg>
+            Settings
+            <svg class="icon icon-right icon-rotate">
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down"></use>
+            </svg>
+          </summary>
+          <div class="folding-content">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#" class="nav-link">General</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Appearance</a></li>
+            </ul>
+          </div>
+        </details>
+      </li>
     </ul>
     <ul class="navbar-nav navbar-nav-bottom">
       <li class="nav-item">
