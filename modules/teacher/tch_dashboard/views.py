@@ -11,5 +11,5 @@ from django.template import loader
 
 def index(request):
     template = loader.get_template('teacher/dashboard/index.html')
-    context = {"courses_page": "active"}
+    context = {"dashboard_page": "active"}
     return HttpResponse(template.render(context))

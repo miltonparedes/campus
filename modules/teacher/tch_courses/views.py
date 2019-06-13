@@ -11,7 +11,7 @@ from django.template import loader
 
 def index(request):
     template = loader.get_template('teacher/courses/index.html')
-    context = {"courses_page": "active"}
+    context = {"courses_page": "open"}
     return HttpResponse(template.render(context))
 
 

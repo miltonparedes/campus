@@ -11,23 +11,9 @@ from django.template import loader
 
 def index(request):
     template = loader.get_template('teacher/notices/index.html')
-    context = {"courses_page": "active"}
+    context = {"notices_page": "active"}
     return HttpResponse(template.render(context))
 
-
-def add(request):
-    template = loader.get_template('teacher/notices/add.html')
-    context = {"courses_page_add": "active"}
-    return HttpResponse(template.render(context))
-
-
-def edit(request):
-    template = loader.get_template('teacher/notices/edit.html')
-    context = {"courses_page_edit": "active"}
-    return HttpResponse(template.render(context))
-
-
-def delete(request):
-    template = loader.get_template('teacher/notices/delete.html')
-    context = {"courses_page_delete": "activate"}
-    return HttpResponse(template.render(context))
+def notice(request):
+    template = loader.get_template('teacher/notices/notice.html')
+    return HttpResponse(template.render())
