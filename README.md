@@ -3,7 +3,7 @@
 
 
 
-## Installation
+## Install
 
 Install `@hyphev/campus` in your project with npm:
 
