@@ -23,5 +23,5 @@ urlpatterns = [
     path('schedules/', include('modules.schedules.urls')),
     path('notices/', include('modules.notices.urls')),
     path('dashboard/', include('modules.dashboard.urls')),
-    # path('admin/', site.urls),
+    # path('', site.urls),
 ]
