@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'modules.login',
     'modules.dashboard',
     'modules.users',
     'modules.courses',
@@ -136,4 +135,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
 
-LOGIN_REDIRECT_URL = '/'
+# Auth config
+
+LOGIN_URL = '/'
+LOGIN_REDIRECT_URL = '/dashboard/'
+LOGOUT_REDIRECT_URL = '/'
