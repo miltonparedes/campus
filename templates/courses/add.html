@@ -1,0 +1,207 @@
+{% extends 'layouts/page.html' %}
+{% load static %}
+
+{% block title %} Add Courses {% endblock %}
+
+{% block content %}
+<form class="form" action="" method="post">
+<div class="row">
+    <div class="col-12 col-lg-8">
+      <div class="nav-tabs">
+        <input name="tabs" type="radio" id="tab-1" class="radio-tabs" checked="checked">
+          <label for="tab-1" class="tab-label">1) Basic Info</label>
+          <div class="tab-panel">
+            <div class="card">
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <label for="course-name">Course name</label>
+                    <input id="course-name" type="text" class="form-control" name="course-name" placeholder="Name">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <label for="attendant">Teacher</label>
+                    <div id="smester" class="form-control">
+                      <select class="select" name="course-attendant">
+                        <option value="">Teacher 1</option>
+                        <option value="">teacher 2</option>
+                      </select>
+                      <svg class="icon">
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <label for="semester">Grade</label>
+                    <div id="semester" class="form-control">
+                      <select class="select" name="">
+                        <option value="first">1st Semester</option>
+                        <option value="second">2nd Semester</option>
+                        <option value="third">3rd Semester</option>
+                        <option value="fourth">4th Semester</option>
+                        <option value="fifh">5th Semester</option>
+                        <option value="sixth">6th Semester</option>
+                        <option value="seventh">7th Semester</option>
+                        <option value="eighth">8th Semester</option>
+                        <option value="nineth">9th Semester</option>
+                      </select>
+                      <svg class="icon">
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <label for="category">Category</label>
+                    <div id="category" class="form-control">
+                      <select class="select">
+                        <option value="category_1">Category 1</option>
+                        <option value="category_2">Category 2</option>
+                        <option value="category_3">Category 3</option>
+                      </select>
+                      <svg class="icon">
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <label for="attendant">Classroom</label>
+                    <div id="smester" class="form-control">
+                      <select class="select" name="course-attendant">
+                        <option value="">Classroom 1</option>
+                        <option value="">Classroom 2</option>
+                      </select>
+                      <svg class="icon">
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-12 col-lg-12">
+                    <label for="description">Course description</label>
+                    <textarea id="description" class="form-control" name="name" rows="8" cols="80" placeholder="Description"></textarea>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <input name="tabs" type="radio" id="tab-2" class="radio-tabs">
+           <label for="tab-2" class="tab-label">2) Schedule</label>
+           <div class="tab-panel">
+            <div class="card">
+              <div class="card-body">
+                <p>The schedules hour uses the 12 hour format. Don't forget to add the "AM / PM" designation</p>
+                <div class="form-row">
+                  <div class="col-12 col-md-12 col-lg-10">
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <label for="">Begin</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <label for="">End</label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                        <label for="name">Monday</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <input class="form-control" id="begin" type="time" name="monday_begin"placeholder="begin">
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-4">
+                        <input class="form-control" id="end" type="time" name="monday_end"placeholder="end">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                        <label for="name">Tuesday</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <input class="form-control" id="begin" type="time" name="tuesday_begin"placeholder="begin">
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-4">
+                        <input class="form-control" id="end" type="time" name="tuesday_end"placeholder="end">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                        <label for="name">Wednesday</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <input class="form-control" id="begin" type="time" name="wednesday_begin"placeholder="begin">
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-4">
+                        <input class="form-control" id="end" type="time" name="wednesday_end"placeholder="end">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                        <label for="name">Thursday</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <input class="form-control" id="begin" type="time" name="thursday_begin"placeholder="begin">
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-4">
+                        <input class="form-control" id="end" type="time" name="thursday_end"placeholder="end">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-2 col-lg-4">
+                        <label for="name">Friday</label>
+                      </div>
+                      <div class="col-6 col-md-5 col-lg-4">
+                        <input class="form-control" id="begin" type="time" name="friday_begin"placeholder="begin">
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-4">
+                        <input class="form-control" id="end" type="time" name="friday_end"placeholder="end">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="form-row">
+                  <div class="col-12">
+                    <button type="submit" class="btn" name="add">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+      </div>
+
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            Aditional options
+          </div>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="col-12">
+                <a class="nav-link" href="/courses/add_category"><button type="button" class="btn"> New category</button></a>
+                <a class="nav-link" href="/courses/add_classroom"><button type="button" class="btn"> New classroom</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</form>
+{% endblock %}

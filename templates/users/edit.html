@@ -1,0 +1,126 @@
+{% extends 'layouts/page.html' %}
+{% load static %}
+
+{% block title %} Edit User {% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-12 col-lg-9">
+    <div class="card">
+      <form class="form" action="" method="post">
+        <div class="card-body">
+          <div class="folding-group">
+            <details class="folding" open>
+              <summary class="folding-title">
+                Basic info
+                <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.sv' %}g#chevron-down"/></svg>
+              </summary>
+              <div class="folding-content">
+                <div class=form-row>
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <label for="name">Name</label>
+                      <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="last-name-a">Last name</label>
+                    <input id="last-name-A" type="text" class="form-control" name="last-name-a" placeholder="Last name">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="birth-date">Birth date</label>
+                    <input id="birth-date" type="date" class="form-control" name="birth-date">
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details class="folding">
+              <summary class="folding-title">
+                Contact info
+                <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.svg' %}#chevron-down"/></svg>
+              </summary>
+              <div class="folding-content">
+                <div class="form-row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="address">Address</label>
+                    <input id="address" type="text" name="address" class="form-control" placeholder="Address">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="cellphone">Cellphone number</label>
+                    <input id="cellphone" type="tel" name="cellphone" class="form-control" placeholder="Cellphone numeber">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="tel" name="phone" class="form-control" placeholder="Phone number">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="enrrolment">Enrrolment</label>
+                    <input id="enrrolment" type="text" name="enrollment"  class="form-control" placeholder="Enrrolment">
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details class="folding">
+              <summary class="folding-title">
+                Rol info
+                <svg class="icon icon-right icon-rotate"><use xlink:href="{% static 'feather.svg' %}#chevron-down"/></svg>
+              </summary>
+              <div class="folding-content">
+                <div class="form-row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <label for="rol">Rol</label>
+                    <div class="form-control">
+                      <select class="select" id="rol">
+                        <option value="admin">Administrative</option>
+                        <option value="teachers">Teachers</option>
+                        <option value="student">Student</option>
+                      </select>
+                      <svg class=icon>
+                        <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label for="">Category</label>
+                  <div class="col-12 col-md-12 col-lg-12">
+                    <label for="category_1" class="form-input-checkbox-inline">
+                      <input type="checkbox"  id="category_1" name="category_1" value="True">
+                      <span class="checkbox-control"></span>
+                      Category 1
+                    </label>
+
+                    <label for="category_2" class="form-input-checkbox-inline">
+                      <input type="checkbox"  id="category_2" name="category_2" value="True">
+                      <span class="checkbox-control"></span>
+                      Category 2
+                    </label>
+
+                    <label for="category_3" class="form-input-checkbox-inline">
+                      <input type="checkbox"  id="category_3" name="category_3" value="True">
+                      <span class="checkbox-control"></span>
+                      Category 3
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="card-footer">
+            <div class="form-row">
+                <button class="btn" name="send">Save Changes</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

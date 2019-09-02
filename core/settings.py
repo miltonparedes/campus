@@ -38,23 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'modules.login',
-    'modules.admin.users',
-    'modules.admin.courses',
-    'modules.admin.dashboard',
-    'modules.admin.notices',
-    'modules.admin.schedules',
-    'modules.student.std_courses',
-    'modules.student.std_dashboard',
-    'modules.student.std_notices',
-    'modules.student.std_schedules',
-    'modules.student.std_users',
-    'modules.teacher.tch_courses',
-    'modules.teacher.tch_dashboard',
-    'modules.teacher.tch_notices',
-    'modules.teacher.tch_schedules',
-    'modules.teacher.tch_users',
+    'modules.dashboard',
+    'modules.users',
+    'modules.courses',
+    'modules.notices',
+    'modules.schedules',
 ]
 
 MIDDLEWARE = [
@@ -75,7 +63,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates/'),
         ],
-        'APP_DIRS': False,
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -146,3 +134,9 @@ STATICFILES_FINDERS = [
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
+
+# Auth config
+
+LOGIN_URL = '/'
+LOGIN_REDIRECT_URL = '/dashboard/'
+LOGOUT_REDIRECT_URL = '/'

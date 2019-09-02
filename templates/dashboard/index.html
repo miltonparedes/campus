@@ -1,0 +1,66 @@
+{% extends 'layouts/page.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="form">
+        <div class="card">
+          <div class="card-header">
+            Users
+          </div>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="col-9">
+                <label for="online">Online users</label>
+              </div>
+              <div class="col-3">
+                <input id ="online" type="text" class="form-control" name="online-users" placeholder="15" readonly>
+              </div>
+            </div>
+            <label for="user-satats">User totals</label>
+            <div id="user-stats" class="form-row">
+              <div class="col-9">
+                <label for="C1-users">Category 1 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C1-users"type="text" class="form-control" name="C1-users" placeholder="13" readonly>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-9">
+                <label for="C2-users">Category 2 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C2-users" type="text" class="form-control" name="C2-users" placeholder="75" readonly>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-9">
+                <label for="C3-users">Category 3 users</label>
+              </div>
+              <div class="col-3">
+                <input id="C3-useres" type="text" class="form-control" name="C3-users" placeholder="20" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="form">
+        <div class="card">
+          <div class="card-header">
+            Overall Grades
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

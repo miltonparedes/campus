@@ -1,0 +1,88 @@
+{% extends 'layouts/page.html' %}
+{% load static %}
+
+{% block title %} Courses Add Classroom {% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <form class="form" action="" method="post">
+          <div class="form-row">
+            <div class="col-12 col-lg-2">
+              <label for="classroom"">Classroom name</label>
+              <input id="classroom" type="text" class="form-control" name="classroom" placeholder="classroom">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <div class="form-row">
+          <div class="col-12">
+            <button type="submit" class="btn" name="Add">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <table class=table>
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Classroom</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <details class="dropdown">
+                  <summary>
+                    <svg class="icon">
+                      <use xlink:href="{% static 'feather.svg' %}#more-vertical"/>
+                    </svg>
+                  </summary>
+                  <ul class="dropdown-content">
+                    <li><a class="dropdown-item" href="/courses/edit_classroom">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="pagination">
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-left"/>
+        </svg>
+      </a>
+      <a class="pagination-item" href="#">1</a>
+      <a class="pagination-item active" href="#">2</a>
+      <a class="pagination-item" href="#">3</a>
+      <a class="pagination-item" href="#">4</a>
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-right"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

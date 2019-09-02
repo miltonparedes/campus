@@ -13,25 +13,27 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.contrib.auth import views as auth_views
+from django.conf.urls.static import static
+from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('', include('modules.login.urls')),
-    path('admin/users/', include('modules.admin.users.urls')),
-    path('admin/courses/', include('modules.admin.courses.urls')),
-    path('admin/schedules/', include('modules.admin.schedules.urls')),
-    path('admin/notices/', include('modules.admin.notices.urls')),
-    path('admin/dashboard/', include('modules.admin.dashboard.urls')),
-    path('teacher/users/', include('modules.teacher.tch_users.urls')),
-    path('teacher/courses/', include('modules.teacher.tch_courses.urls')),
-    path('teacher/schedules/', include('modules.teacher.tch_schedules.urls')),
-    path('teacher/notices/', include('modules.teacher.tch_notices.urls')),
-    path('teacher/dashboard/', include('modules.teacher.tch_dashboard.urls')),
-    path('student/users/', include('modules.student.std_users.urls')),
-    path('student/courses/', include('modules.student.std_courses.urls')),
-    path('student/schedules/', include('modules.student.std_schedules.urls')),
-    path('student/notices/', include('modules.student.std_notices.urls')),
-    path('student/dashboard/', include('modules.student.std_dashboard.urls')),
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
+    path('dashboard/', include('modules.dashboard.urls')),
+    path('users/', include('modules.users.urls')),
+    path('courses/', include('modules.courses.urls')),
+    path('schedules/', include('modules.schedules.urls')),
+    path('notices/', include('modules.notices.urls')),
+]
+
+# Use static() to add url mapping to serve static files during development (only)
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# Custom Login url
+urlpatterns += [
+    path('', include('django.contrib.auth.urls')),
+    path('', auth_views.LoginView.as_view()),
 ]

@@ -1,0 +1,97 @@
+{% extends 'layouts/page.html' %}
+{% load static %}
+
+{% block title %} Notices {% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <form class="form">
+          <div class="form-row">
+            <div class="col-6 col-md-3">
+              <input type="text" class="form-control" name="" placeholder="Specific search">
+            </div>
+            <div class="col-6 col-md-3">
+              <button class="btn" name="send" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <table class="table ">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>To</th>
+              <th>Subject</th>
+              <th>Date</th>
+              <th>Message</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>All Careers</td>
+              <td>Extraordinary evaluations - Second chance</td>
+              <td>Friday, 20th May, 2019</td>
+              <td>
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam sed sem aliquam, iaculis neque in, aliquet lorem...
+              </td>
+              <td>
+                <a class="btn" href="notice">
+                  See
+                </a>
+              </td>
+              <td>
+                <details class="dropdown">
+                  <summary>
+                    <svg class="icon">
+                      <use xlink:href="{% static 'feather.svg' %}#more-vertical"/>
+                    </svg>
+                  </summary>
+                  <ul class="dropdown-content">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="pagination">
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-left"/>
+        </svg>
+      </a>
+      <a class="pagination-item" href="#">1</a>
+      <a class="pagination-item active" href="#">2</a>
+      <a class="pagination-item" href="#">3</a>
+      <a class="pagination-item" href="#">4</a>
+      <a class="pagination-action" href="#">
+        <svg class="icon icon">
+          <use xlink:href="{% static 'feather.svg' %}#chevron-right"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

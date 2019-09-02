@@ -1,5 +1,15 @@
 {% load static %}
 <header class="nav-header">
+  <button class="menu-toggle menu-toggle-button">
+    <svg class="icon icon-big">
+      <use xlink:href="/assets/icons/feather.svg#menu"></use>
+    </svg>
+  </button>
+  <button for="sidebar-docs" class="menu-toggle menu-toggle-button close">
+    <svg class="icon icon-big">
+      <use xlink:href="/assets/icons/feather.svg#x"></use>
+    </svg>
+  </button>
   <a class="brand logo" href="/">campus</a>
   <nav class="navbar-menu">
     <form class="form"><input class="form-control" type="text" placeholder="Search..."></form>
@@ -7,9 +17,9 @@
       <li class="nav-item">
         <details class="dropdown">
           <summary class="nav-link">
-            <span>User</span>
+            <span>{{ user.get_short_name }}</span>
             <svg class="icon icon-small">
-              <use xlink:href="{% static 'feather.svg' %}#chevron-down"/>
+              <use xlink:href="{% static 'feather.svg' %}#chevron-down" />
             </svg>
           </summary>
           <ul class="dropdown-content">

@@ -1,17 +1,6 @@
 {% load static %}
-<label for="sidebar" class="menu-toggle-button">
-  <svg class="icon icon-big">
-    <use xlink:href="{% static 'feather.svg' %}#menu"></use>
-  </svg>
-</label>
-<input type="checkbox" id="sidebar" role="button" class="menu-toggle">
-<aside class="sidebar col-12 col-md-3 col-xl-2">
-  <label class="sidebar-overlay" for="sidebar"></label>
-  <label for="sidebar" class="menu-toggle-button">
-    <svg class="icon icon-big">
-      <use xlink:href="{% static 'feather.svg' %}#arrow-left"/>
-    </svg>
-  </label>
+<button class="menu-toggle sidebar-overlay"></button>
+<aside id="menu" class="sidebar col-12 col-md-3 col-xl-2">
   <nav class="navbar-menu">
     <ul class="navbar-nav folding-menu">
       <li class="nav-item">
